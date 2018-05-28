@@ -6,6 +6,8 @@
         console.info('Сайт разработан маркетинговым агентством BRAIN WORKS');
 
         var html = $('html');
+        var search = $('.js-search');
+        var search_form = $('.search-form');
         var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
         if (isMobile) {
@@ -13,6 +15,16 @@
         }
 
         html.removeClass('no-js').addClass('js');
+
+        search.on('click', function () {
+            search_form.toggleClass('is-opened');
+        });
+
+        $(document).on('click', function (e) {
+            if(!$(e.target).closest(search_form.add(search)).length) {
+                search_form.removeClass('is-opened');
+            }
+        });
 
         // Stick Footer
         var footerHeight = $('.footer').outerHeight() + 20;

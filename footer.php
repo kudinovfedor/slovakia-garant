@@ -12,11 +12,14 @@
     <?php endif; ?>
 
     <div class="copyright">
-        <p class="container">
-            <?php _e('Developed by', 'brainworks') ?>
-            <a href="https://brainworks.com.ua/" target="_blank">BRAIN WORKS</a>
-            &copy; <?php echo date('Y'); ?>
-        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-6 col-md-5">&copy; 2018, &laquo;SlovakiaGarant&raquo;</div>
+                <div class="col col-sm-6 col-md-7"><?php _e('Developed by', 'brainworks') ?>
+                    <a href="https://brainworks.com.ua/" target="_blank">BRAIN WORKS</a>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 

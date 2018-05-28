@@ -1,6 +1,6 @@
 'use strict';
 
-const themeName = 'brainworks';
+const themeName = 'slovakia-garant-v1.0';
 
 import gulp from 'gulp';
 import zip from 'gulp-zip';
@@ -27,12 +27,12 @@ const getFullDate = () => {
 };
 
 gulp.task('svg', () => {
-    return gulp.src(`${themeName}/assets/img/svg/*.svg`)
+    return gulp.src(`assets/img/svg/*.svg`)
         .pipe(plumber())
         .pipe(svgmin({js2svg: {pretty: false}}))
         .pipe(svgstore({inlineSvg: true}))
         .pipe(rename({basename: 'svg', prefix: '', suffix: '-sprite', extname: '.svg'}))
-        .pipe(gulp.dest(`${themeName}/assets/img/`));
+        .pipe(gulp.dest(`assets/img/`));
 });
 
 gulp.task('sass', () => {

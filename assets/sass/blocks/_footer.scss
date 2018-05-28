@@ -11,9 +11,9 @@
 }
 
 .copyright {
-    padding: 14px 0;
+    padding: 25px 0;
+    font-size: 15px;
     background-color: $footerBgColor;
-    text-align: center;
     color: $footerFontColor;
 
     a {
@@ -22,6 +22,17 @@
 
         &:hover {
             color: $footerLinkColorActive;
+        }
+    }
+}
+
+@media only screen and (max-width: 544px) {
+    .copyright {
+        padding: 15px 0;
+        text-align: center;
+
+        .col + .col {
+            margin-top: 5px;
         }
     }
 }

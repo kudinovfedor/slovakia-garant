@@ -10,7 +10,14 @@ function bw_setup()
     add_theme_support('widgets');
     add_theme_support('automatic-feed-links');
     add_theme_support("title-tag");
-    add_theme_support("custom-header");
+    add_theme_support("custom-header", array(
+        'width'         => 1920,
+        'height'        => 691,
+        'flex-height'   => true,
+        'flex-width'    => true,
+        'uploads'       => true,
+        'default-image' => get_template_directory_uri() . '/assets/img/hero-bg.jpg',
+    ));
     add_theme_support("custom-background");
     add_theme_support('woocommerce');
 
@@ -23,7 +30,7 @@ function bw_setup()
 
 add_action('after_setup_theme', 'bw_setup');
 
-if (!isset($content_width)) {
+if ( ! isset($content_width)) {
     $content_width = 600;
 }
 
@@ -45,7 +52,8 @@ add_action('init', 'page_excerpt');
 /**
  * Add post formats support. See http://codex.wordpress.org/Post_Formats
  */
-add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+add_theme_support('post-formats',
+    array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
 function bw_wp_nav_menu_args($args)
 {
@@ -69,7 +77,7 @@ function bw_nav_menu_css_class($classes, $item, $args, $depth)
 
     if ($depth > 0) {
         foreach ($classes as $key => $class) {
-            if(preg_match('/^menu-item/', $class)) {
+            if (preg_match('/^menu-item/', $class)) {
                 $classes[$key] = 'sub-' . $class;
             }
         }
@@ -111,7 +119,7 @@ add_filter('wp_nav_menu', 'bw_menu_no_link', 10, 2);
 
 /** Woocommerce */
 // Override theme default specification for product # per row
-if (!function_exists('bw_loop_shop_columns')) {
+if ( ! function_exists('bw_loop_shop_columns')) {
     function bw_loop_shop_columns($columns)
     {
         if (is_shop() || is_product_category() || is_product_tag()) {
@@ -145,6 +153,7 @@ function bw_loop_shop_per_page($cols)
     // $cols contains the current number of products per page based on the value stored on Options -> Reading
     // Return the number of products you wanna show per page.
     $cols = 12;
+
     return $cols;
 }
 
@@ -171,7 +180,8 @@ function bw_breadcrumbs_localization($l10n)
         'day'        => '',
         'attachment' => __('Media: %s', 'brainworks'),
         'tag'        => __('Posts by tag: <b>%s</b>', 'brainworks'),
-        'tax_tag'    => __('%1$s from "%2$s" by tag: <b>%3$s</b>', 'brainworks'),);
+        'tax_tag'    => __('%1$s from "%2$s" by tag: <b>%3$s</b>', 'brainworks'),
+    );
 }
 
 add_filter('kama_breadcrumbs_default_loc', 'bw_breadcrumbs_localization', 10, 1);

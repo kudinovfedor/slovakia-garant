@@ -10,6 +10,132 @@
     color: $headerFontColor;
 }
 
+.header {
+    position: relative;
+    padding: 10px 0 0;
+    background-color: #fff;
+
+    &-top,
+    &-bottom {
+        display: table;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    &-item {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &-email,
+    &-skype {
+        font-size: 14px;
+    }
+
+    &-email {
+        margin-right: 10px;
+    }
+
+    &-icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        text-decoration: none;
+        background-color: #003980;
+        @include border-radius(50%);
+        @extend %smooth_animation;
+
+        &:hover {
+            background-color: lighten(#003980, 10%);
+        }
+    }
+
+    &-btn {
+        margin-left: 10px;
+    }
+
+    &-phone {
+        margin-left: -4px;
+    }
+
+    &-search {
+        width: 100%;
+        max-width: 460px;
+        top: 150%;
+        z-index: 1;
+        visibility: hidden;
+        @include opacity(0);
+        @extend %smooth_animation;
+
+        &.is-opened {
+            top: 100%;
+            visibility: visible;
+            @include opacity(1);
+        }
+
+        &,
+        &-btn[type='submit'] {
+            position: absolute;
+            right: 0;
+            background-color: #fff;
+            @include box-shadow(-15px 0 49px rgba(#003980, .08));
+        }
+
+        &-field,
+        &-btn[type='submit'] {
+            border: 0;
+            @include border-radius(0);
+        }
+
+        &-field {
+            width: 100%;
+            padding: 14px 95px 14px 30px;
+            background-color: #fff;
+            font-size: 15px;
+            line-height: 1.3;
+        }
+
+        &-btn[type='submit'] {
+            top: 0;
+            padding: 14px;
+            width: 65px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.3!important;
+            color: #003980;
+            @extend %smooth_animation;
+
+            &:hover,
+            &:focus {
+                background-color: #003980;
+                color: #fff;
+            }
+        }
+
+        &-icon {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            border: 0;
+            color: #003980;
+            background-color: transparent;
+            @extend %smooth_animation;
+
+            &:hover,
+            &:focus {
+                color: #ee1c25;
+            }
+        }
+    }
+}
+
 .logo {
     &,
     &-link,
@@ -21,6 +147,7 @@
 
 .phone {
     @extend %reset-list;
+    font-size: 0;
 
     &,
     &-item {
@@ -29,12 +156,14 @@
     }
 
     &-item {
-        margin: 0 5px;
+        margin: 0 1px;
+        font-size: 14px;
     }
 
     &-number {
         display: inline-block;
         text-decoration: none;
+        font-size: 14px;
 
         &:hover {
             text-decoration: underline;
@@ -42,8 +171,9 @@
     }
 }
 
-.social {
+.messenger {
     @extend %reset-list;
+    font-size: 0;
 
     &,
     &-item {
@@ -52,21 +182,74 @@
     }
 
     &-item {
-        margin: 0 5px;
+        margin: 0 1px;
+        font-size: 14px;
     }
 
     &-link {
         display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
         text-align: center;
+        line-height: 30px;
+        color: #fff;
         text-decoration: none;
+        background-color: #003980;
+        @include border-radius(50%);
+        @extend %smooth_animation;
 
         &:hover {
+            color: #fff;
+            background-color: lighten(#003980, 10%);
+        }
+    }
+}
+
+.social {
+    @extend %reset-list;
+    font-size: 0;
+
+    &,
+    &-item {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &-item {
+        margin: 0 1px;
+        font-size: 14px;
+    }
+
+    &-link {
+        display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        text-decoration: none;
+        background-color: #003980;
+        @include border-radius(50%);
+        @extend %smooth_animation;
+
+        &:hover {
+            color: #fff;
+            background-color: lighten(#003980, 10%);
         }
     }
 }
 
 .lang {
     @extend %reset-list;
+
+    select {
+        padding: 5px;
+        border: 1px solid #003980;
+        @include border-radius(0);
+        font-size: 15px;
+    }
 
     &,
     &-item {

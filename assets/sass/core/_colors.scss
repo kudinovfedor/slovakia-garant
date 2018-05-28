@@ -30,9 +30,9 @@ $menuFontColor: #fff;
 $menuFontColorActive: #fff;
 
 //FOOTER
-$footerBgColor: $themeColorOne;
-$footerFontColor: #fff;
-$footerLinkColorActive: darken(#fff, 25%);
+$footerBgColor: #000;
+$footerFontColor: #454545;
+$footerLinkColorActive: lighten($footerFontColor, 10%);
 
 //WRAPPER
 $wrapperBgColor: #fff;

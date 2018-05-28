@@ -115,3 +115,41 @@ select {
         @include appearance(none);
     }
 }
+
+.form {
+    &-row {
+        margin-bottom: 25px;
+    }
+
+    &-field {
+        width: 100%;
+        border: 1px solid #f0f0f1;
+        background-color: #fff;
+        color: #000;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: (24/15);
+        padding: 15px 20px;
+        @include border-radius(0);
+        @extend %smooth_animation;
+
+        &.is-error,
+        &.is-invalid {
+            color: #ee1c25;
+            border-color: #ee1c25;
+        }
+
+        &.is-valid {
+            border-color: #00397f;
+        }
+
+        &:focus {
+            border-color: #00397f;
+        }
+    }
+}
+
+textarea.form-field {
+    resize: vertical;
+    min-height: 120px;
+}

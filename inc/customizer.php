@@ -8,13 +8,13 @@ function theme_mod($name, $default = false)
 {
     $theme_mod = get_theme_mod($name, $default);
 
-    if (!empty($theme_mod)) {
+    if ( ! empty($theme_mod)) {
         echo $theme_mod;
     }
 }
 
 /**
- * @param $wp_customize
+ * @param $wp_customize WP_Customize_Manager
  */
 function bw_customize_register($wp_customize)
 {
@@ -357,6 +357,54 @@ function bw_customize_register($wp_customize)
         'settings'    => 'bw_login_logo',
     )));
 
+    // Section Additional
+    $wp_customize->add_section('bw_additional', array(
+        'title'       => 'Additional',
+        'description' => 'Additional links',
+        'panel'       => 'bw_theme_options',
+    ));
+
+    $wp_customize->add_setting('bw_additional_email', array('default' => '#'));
+    $wp_customize->add_setting('bw_additional_skype', array('default' => '#'));
+    $wp_customize->add_setting('bw_additional_viber', array('default' => '#'));
+    $wp_customize->add_setting('bw_additional_whatsapp', array('default' => '#'));
+    $wp_customize->add_setting('bw_additional_telegram', array('default' => '#'));
+
+    $wp_customize->add_control('bw_social_email', array(
+        'label'    => 'Email',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_email',
+        'type'     => 'email',
+    ));
+
+    $wp_customize->add_control('bw_additional_skype', array(
+        'label'    => 'Skype',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_skype',
+        'type'     => 'text',
+    ));
+
+    $wp_customize->add_control('bw_additional_viber', array(
+        'label'    => 'Viber',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_viber',
+        'type'     => 'text',
+    ));
+
+    $wp_customize->add_control('bw_additional_whatsapp', array(
+        'label'    => 'WhatsApp',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_whatsapp',
+        'type'     => 'text',
+    ));
+
+    $wp_customize->add_control('bw_additional_telegram', array(
+        'label'    => 'Telegram',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_telegram',
+        'type'     => 'text',
+    ));
+
     // Section Social
     $wp_customize->add_section('bw_social', array(
         'title'       => __('Social', 'brainworks'),
@@ -371,6 +419,7 @@ function bw_customize_register($wp_customize)
     $wp_customize->add_setting('bw_social_instagram', array('default' => '#'));
     $wp_customize->add_setting('bw_social_google_plus', array('default' => '#'));
     $wp_customize->add_setting('bw_social_youtube', array('default' => '#'));
+    $wp_customize->add_setting('bw_social_odnoklassniki', array('default' => '#'));
 
     $wp_customize->add_control('bw_social_vk', array(
         'label'    => __('Vk', 'brainworks'),
@@ -421,6 +470,13 @@ function bw_customize_register($wp_customize)
         'type'     => 'text',
     ));
 
+    $wp_customize->add_control('bw_social_odnoklassniki', array(
+        'label'    => __('Odnoklassniki', 'brainworks'),
+        'section'  => 'bw_social',
+        'settings' => 'bw_social_odnoklassniki',
+        'type'     => 'text',
+    ));
+
     // Section Phones
     $wp_customize->add_section('bw_phones', array(
         'title'       => __('Phones', 'brainworks'),
@@ -467,10 +523,11 @@ add_action('customize_register', 'bw_customize_register');
 
 function bw_customizer_preview()
 {
-    wp_register_script('bw_customizer_preview', get_template_directory_uri() . '/assets/js/customizer-preview.js', array(
-        'jquery',
-        'customize-preview'
-    ), null, true);
+    wp_register_script('bw_customizer_preview', get_template_directory_uri() . '/assets/js/customizer-preview.js',
+        array(
+            'jquery',
+            'customize-preview'
+        ), null, true);
     wp_enqueue_script('bw_customizer_preview');
 }
 
@@ -478,10 +535,11 @@ add_action('customize_preview_init', 'bw_customizer_preview');
 
 function bw_customize_controls_enqueue_scripts()
 {
-    wp_register_script('bw_customizer_control', get_template_directory_uri() . '/assets/js/customizer-control.js', array(
-        'jquery',
-        'customize-controls'
-    ), null, true);
+    wp_register_script('bw_customizer_control', get_template_directory_uri() . '/assets/js/customizer-control.js',
+        array(
+            'jquery',
+            'customize-controls'
+        ), null, true);
     wp_enqueue_script('bw_customizer_control');
 }
 

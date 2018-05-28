@@ -168,40 +168,45 @@ if ( ! function_exists('get_social')) {
     function get_social()
     {
         $_socials = [
-            'vk'          => [
-                'url'  => get_theme_mod('bw_social_vk'),
-                'text' => 'Vk',
-                'icon' => 'fa-vk',
-            ],
-            'twitter'     => [
-                'url'  => get_theme_mod('bw_social_twitter'),
-                'text' => 'Twitter',
-                'icon' => 'fa-twitter',
-            ],
-            'facebook'    => [
-                'url'  => get_theme_mod('bw_social_facebook'),
-                'text' => 'Facebook',
-                'icon' => 'fa-facebook',
-            ],
-            'linkedin'    => [
-                'url'  => get_theme_mod('bw_social_linkedin'),
-                'text' => 'Linkedin',
-                'icon' => 'fa-linkedin',
-            ],
-            'instagram'   => [
-                'url'  => get_theme_mod('bw_social_instagram'),
-                'text' => 'Instagram',
-                'icon' => 'fa-instagram',
-            ],
-            'google-plus' => [
-                'url'  => get_theme_mod('bw_social_google_plus'),
-                'text' => 'Google Plus',
-                'icon' => 'fa-google-plus',
-            ],
-            'youtube'     => [
+            'youtube'       => [
                 'url'  => get_theme_mod('bw_social_youtube'),
                 'text' => 'YouTube',
-                'icon' => 'fa-youtube-play',
+                'icon' => 'fab fa-youtube',
+            ],
+            'facebook'      => [
+                'url'  => get_theme_mod('bw_social_facebook'),
+                'text' => 'Facebook',
+                'icon' => 'fab fa-facebook-f',
+            ],
+            'vk'            => [
+                'url'  => get_theme_mod('bw_social_vk'),
+                'text' => 'Vk',
+                'icon' => 'fab fa-vk',
+            ],
+            'odnoklassniki' => [
+                'url'  => get_theme_mod('bw_social_odnoklassniki'),
+                'text' => 'Odnoklassniki',
+                'icon' => 'fab fa-odnoklassniki',
+            ],
+            'twitter'       => [
+                'url'  => get_theme_mod('bw_social_twitter'),
+                'text' => 'Twitter',
+                'icon' => 'fab fa-twitter',
+            ],
+            'linkedin'      => [
+                'url'  => get_theme_mod('bw_social_linkedin'),
+                'text' => 'Linkedin',
+                'icon' => 'fab fa-linkedin-in',
+            ],
+            'instagram'     => [
+                'url'  => get_theme_mod('bw_social_instagram'),
+                'text' => 'Instagram',
+                'icon' => 'fab fa-instagram',
+            ],
+            'google-plus'   => [
+                'url'  => get_theme_mod('bw_social_google_plus'),
+                'text' => 'Google Plus',
+                'icon' => 'fab fa-google-plus-g',
             ],
         ];
 
@@ -293,11 +298,13 @@ if ( ! function_exists('get_default_logo_link')) {
     /**
      * Display site logo
      *
+     * @param bool $use_svg
+     *
      * @return void
      */
-    function get_default_logo_link()
+    function get_default_logo_link($use_svg = false)
     {
-        $desc = sprintf('<span class="logo-desc">%s</span>', get_bloginfo('description'));
+        $desc = sprintf('<span class="logo-desc screen-reader-text">%s</span>', get_bloginfo('description'));
 
         if (has_custom_logo()) {
 
@@ -308,7 +315,11 @@ if ( ! function_exists('get_default_logo_link')) {
 
             $file = get_template_directory_uri() . '/assets/img/logo.png';
 
-            $img = sprintf('<img class="logo-img" src="%s" alt="%s">', esc_url($file), get_bloginfo('name'));
+            if($use_svg) {
+                $img = sprintf('<svg width="135" height="89" aria-label="%s"><use xlink:href="#logo"></use></svg>', get_bloginfo('name'));
+            } else {
+                $img = sprintf('<img class="logo-img" src="%s" alt="%s">', esc_url($file), get_bloginfo('name'));
+            }
 
             $link = sprintf('<a class="logo-link" href="%s">%s</a>', esc_url(home_url('/')), $img);
 
