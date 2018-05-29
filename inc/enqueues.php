@@ -23,16 +23,16 @@ function bw_enqueues()
     wp_register_script('slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js',
         array('jquery'), null, true);
 
-    if (post_type_exists('reviews') && is_front_page()) {
+    if (post_type_exists('reviews') && (is_front_page() || is_home())) {
         wp_enqueue_style('slick-css');
         wp_enqueue_script('slick-js');
     }
 
-    if ( ! WP_DEBUG) {
+    /*if ( ! WP_DEBUG) {
         wp_deregister_script('jquery');
         wp_register_script('jquery', get_template_directory_uri() . '/assets/js/jquery-1.12.4.min.js', array(), null,
             true);
-    }
+    }*/
 
     wp_register_script('brainworks-js', get_template_directory_uri() . '/assets/js/brainworks.js', array('jquery'),
         null, true);
