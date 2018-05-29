@@ -8,6 +8,7 @@
         var html = $('html');
         var search = $('.js-search');
         var search_form = $('.search-form');
+        var reviews = $('.js-reviews');
         var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
         if (isMobile) {
@@ -26,8 +27,15 @@
             }
         });
 
+        if(reviews.length && reviews.find('.review-item').length > 1) {
+            reviews.slick({
+                prevArrow: '.review-btn-prev',
+                nextArrow: '.review-btn-next',
+            });
+        }
+
         // Stick Footer
-        var footerHeight = $('.footer').outerHeight() + 20;
+        var footerHeight = $('.footer').outerHeight();
         $('.page-wrapper').css('padding-bottom', footerHeight + 'px');
 
         // Scroll Top

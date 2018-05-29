@@ -21,3 +21,6 @@ require_once locate_template('/inc/index-pagination.php');
 require_once locate_template('/inc/split-post-pagination.php');
 require_once locate_template('/inc/feedback.php');
 require_once locate_template('/inc/shortcodes.php');
+require_once locate_template('/inc/post_type/reviews.php');
+require_once locate_template('/inc/post_type/reviews-metabox.php');
+require_once locate_template('/inc/post_type/post-metabox.php');

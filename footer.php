@@ -23,6 +23,10 @@
     </div>
 </footer>
 
+<button class="btn-sticky <?php echo get_lang_class('js-stock'); ?>" type="button">
+    <?php _e('STOCK! -10% for all prices', 'brainworks'); ?>
+</button>
+
 </div><!-- .wrapper end-->
 
 <?php scroll_top(); ?>
