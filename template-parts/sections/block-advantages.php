@@ -66,7 +66,7 @@
                             </li>
                         <?php } ?>
                     </ul>
-                    <div class="text-center">
+                    <div class="text-center on-mobile-show">
                         <button class="button-medium <?= get_lang_class('js-adv-order-service') ?>" type="button"><?php _e('Order service', 'brainworks'); ?></button>
                     </div>
                 <?php }
