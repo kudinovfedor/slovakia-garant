@@ -24,3 +24,17 @@ require_once locate_template('/inc/shortcodes.php');
 require_once locate_template('/inc/post_type/reviews.php');
 require_once locate_template('/inc/post_type/reviews-metabox.php');
 require_once locate_template('/inc/post_type/post-metabox.php');
+
+if ( ! function_exists('dump')) {
+    /** Dump
+     *
+     * @param mixed $expression
+     * @return void
+     */
+    function dump($expression)
+    {
+        echo '<pre>';
+        var_dump($expression);
+        echo '</pre>';
+    }
+}

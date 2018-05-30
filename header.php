@@ -10,6 +10,7 @@
           type="image/x-icon">
     <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/img/favicon.ico'); ?>"
           type="image/x-icon">
+    <meta name="google-site-verification" content="Tl7S56IQyU9gKx4J-ES5vNFL9mrXb9LmkmyHpjf1g9M">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> id="top">
@@ -21,7 +22,7 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 text-center">
                     <div class="logo"><?php get_default_logo_link(true); ?></div>
                 </div>
                 <div class="col-lg-10">

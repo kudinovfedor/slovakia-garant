@@ -4332,40 +4332,31 @@ form fieldset {
   form fieldset input {
     width: 100%;
     margin-bottom: 20px; }
-  form fieldset input[type="submit"] {
+  form fieldset [type="submit"] {
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
-    border: 0;
-    border-radius: 4px;
-    background-color: #0027ff;
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color: #ee1c25;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: none;
     text-align: center;
     font-family: inherit;
-    font-weight: 700;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    font-weight: 400;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
     -webkit-transition: 0.2s;
     transition: 0.2s;
     margin-bottom: 0; }
-    form fieldset input[type="submit"].fa {
+    form fieldset [type="submit"].fa {
       font-family: FontAwesome; }
-    form fieldset input[type="submit"]:hover {
+    form fieldset [type="submit"]:hover {
       color: #fff;
-      background-color: #3352ff;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
-    form fieldset input[type="submit"]:active {
-      background-color: #0027ff;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
-    form fieldset input[type="submit"]:focus {
+      background-color: #f24b53; }
+    form fieldset [type="submit"]:active {
+      background-color: #ee1c25; }
+    form fieldset [type="submit"]:focus {
       outline: 0; }
   form fieldset textarea {
     width: 100%;
@@ -4446,28 +4437,51 @@ textarea.form-field {
 .woocommerce input.button:disabled[disabled],
 .woocommerce input.button:disabled[disabled]:hover, .woocommerce a.button.alt,
 .woocommerce button.button.alt,
-.woocommerce input.button.alt {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
-  height: auto;
+.woocommerce input.button.alt, .button-style, .button-large, .button-medium, .button-small, .button-inverse, [type="submit"] {
   cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
-  .woocommerce #respond input#submit a, .woocommerce #respond input#submit.alt a, .woocommerce a.button a, .woocommerce a.button.disabled a, .woocommerce a.button.disabled:hover a, .woocommerce a.button:disabled a, .woocommerce a.button:disabled:hover a, .woocommerce a.button:disabled[disabled] a, .woocommerce a.button:disabled[disabled]:hover a, .woocommerce button.button a, .woocommerce button.button.disabled a, .woocommerce button.button.disabled:hover a, .woocommerce button.button:disabled a, .woocommerce button.button:disabled:hover a, .woocommerce button.button:disabled[disabled] a, .woocommerce button.button:disabled[disabled]:hover a, .woocommerce input.button a, .woocommerce input.button.disabled a, .woocommerce input.button.disabled:hover a, .woocommerce input.button:disabled a, .woocommerce input.button:disabled:hover a, .woocommerce input.button:disabled[disabled] a, .woocommerce input.button:disabled[disabled]:hover a, .woocommerce a.button.alt a, .woocommerce button.button.alt a, .woocommerce input.button.alt a {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background-color: #ee1c25;
+  color: #fff;
+  text-transform: none;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 400;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .woocommerce #respond input.fa#submit, .woocommerce a.fa.button, .woocommerce a.fa.button.disabled:hover, .woocommerce a.fa.button:disabled:hover, .woocommerce a.fa.button:disabled[disabled],
+  .woocommerce button.fa.button,
+  .woocommerce button.fa.button.disabled:hover,
+  .woocommerce button.fa.button:disabled:hover,
+  .woocommerce button.fa.button:disabled[disabled],
+  .woocommerce input.fa.button,
+  .woocommerce input.fa.button.disabled:hover,
+  .woocommerce input.fa.button:disabled:hover,
+  .woocommerce input.fa.button:disabled[disabled], .fa.button-style, .fa.button-large, .fa.button-medium, .fa.button-small, .fa.button-inverse, .fa[type="submit"] {
+    font-family: FontAwesome; }
+  .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce a.button.disabled:hover, .woocommerce a.button:hover:disabled[disabled],
+  .woocommerce button.button:hover,
+  .woocommerce button.button.disabled:hover,
+  .woocommerce button.button:hover:disabled[disabled],
+  .woocommerce input.button:hover,
+  .woocommerce input.button.disabled:hover,
+  .woocommerce input.button:hover:disabled[disabled], .button-style:hover, .button-large:hover, .button-medium:hover, .button-small:hover, .button-inverse:hover, :hover[type="submit"] {
     color: #fff;
-    display: inline-block; }
-  .woocommerce #respond input#submit span, .woocommerce #respond input#submit.alt span, .woocommerce a.button span, .woocommerce a.button.disabled span, .woocommerce a.button.disabled:hover span, .woocommerce a.button:disabled span, .woocommerce a.button:disabled:hover span, .woocommerce a.button:disabled[disabled] span, .woocommerce a.button:disabled[disabled]:hover span, .woocommerce button.button span, .woocommerce button.button.disabled span, .woocommerce button.button.disabled:hover span, .woocommerce button.button:disabled span, .woocommerce button.button:disabled:hover span, .woocommerce button.button:disabled[disabled] span, .woocommerce button.button:disabled[disabled]:hover span, .woocommerce input.button span, .woocommerce input.button.disabled span, .woocommerce input.button.disabled:hover span, .woocommerce input.button:disabled span, .woocommerce input.button:disabled:hover span, .woocommerce input.button:disabled[disabled] span, .woocommerce input.button:disabled[disabled]:hover span, .woocommerce a.button.alt span, .woocommerce button.button.alt span, .woocommerce input.button.alt span {
-    color: #fff;
-    display: inline-block; }
+    background-color: #f24b53; }
+  .woocommerce #respond input#submit:active, .woocommerce a.button:active, .woocommerce a.button.disabled:active:hover, .woocommerce a.button:active:disabled:hover, .woocommerce a.button:active:disabled[disabled],
+  .woocommerce button.button:active,
+  .woocommerce button.button.disabled:active:hover,
+  .woocommerce button.button:active:disabled:hover,
+  .woocommerce button.button:active:disabled[disabled],
+  .woocommerce input.button:active,
+  .woocommerce input.button.disabled:active:hover,
+  .woocommerce input.button:active:disabled:hover,
+  .woocommerce input.button:active:disabled[disabled], .button-style:active, .button-large:active, .button-medium:active, .button-small:active, .button-inverse:active, :active[type="submit"] {
+    background-color: #ee1c25; }
   .woocommerce #respond input#submit:focus, .woocommerce a.button:focus, .woocommerce a.button.disabled:focus:hover, .woocommerce a.button:focus:disabled:hover, .woocommerce a.button:focus:disabled[disabled],
   .woocommerce button.button:focus,
   .woocommerce button.button.disabled:focus:hover,
@@ -4476,51 +4490,14 @@ textarea.form-field {
   .woocommerce input.button:focus,
   .woocommerce input.button.disabled:focus:hover,
   .woocommerce input.button:focus:disabled:hover,
-  .woocommerce input.button:focus:disabled[disabled] {
+  .woocommerce input.button:focus:disabled[disabled], .button-style:focus, .button-large:focus, .button-medium:focus, .button-small:focus, .button-inverse:focus, :focus[type="submit"] {
     outline: 0; }
-  .woocommerce #respond input.button-inverse#submit, .woocommerce a.button-inverse.button, .woocommerce a.button-inverse.button.disabled:hover, .woocommerce a.button-inverse.button:disabled:hover, .woocommerce a.button-inverse.button:disabled[disabled],
-  .woocommerce button.button-inverse.button,
-  .woocommerce button.button-inverse.button.disabled:hover,
-  .woocommerce button.button-inverse.button:disabled:hover,
-  .woocommerce button.button-inverse.button:disabled[disabled],
-  .woocommerce input.button-inverse.button,
-  .woocommerce input.button-inverse.button.disabled:hover,
-  .woocommerce input.button-inverse.button:disabled:hover,
-  .woocommerce input.button-inverse.button:disabled[disabled] {
-    background: #0027ff;
-    color: #fff; }
-    .woocommerce #respond input.button-inverse#submit:hover, .woocommerce a.button-inverse.button:hover,
-    .woocommerce button.button-inverse.button:hover,
-    .woocommerce input.button-inverse.button:hover, .woocommerce #respond input.button-inverse#submit:active, .woocommerce a.button-inverse.button:active, .woocommerce a.button-inverse.button:active:disabled[disabled]:hover,
-    .woocommerce button.button-inverse.button:active,
-    .woocommerce button.button-inverse.button:active:disabled[disabled]:hover,
-    .woocommerce input.button-inverse.button:active,
-    .woocommerce input.button-inverse.button:active:disabled[disabled]:hover {
-      color: #0027ff;
-      background: #fff; }
-  .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce a.button.disabled:hover, .woocommerce a.button:hover:disabled[disabled],
-  .woocommerce button.button:hover,
-  .woocommerce button.button.disabled:hover,
-  .woocommerce button.button:hover:disabled[disabled],
-  .woocommerce input.button:hover,
-  .woocommerce input.button.disabled:hover,
-  .woocommerce input.button:hover:disabled[disabled], .woocommerce #respond input#submit:active, .woocommerce a.button:active, .woocommerce a.button.disabled:active:hover, .woocommerce a.button:active:disabled:hover, .woocommerce a.button:active:disabled[disabled],
-  .woocommerce button.button:active,
-  .woocommerce button.button.disabled:active:hover,
-  .woocommerce button.button:active:disabled:hover,
-  .woocommerce button.button:active:disabled[disabled],
-  .woocommerce input.button:active,
-  .woocommerce input.button.disabled:active:hover,
-  .woocommerce input.button:active:disabled:hover,
-  .woocommerce input.button:active:disabled[disabled] {
-    background-color: #0027ff;
-    color: #fff; }
 
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover,
 .woocommerce button.button.alt:hover,
 .woocommerce input.button.alt:hover {
   color: #fff;
-  background-color: #3352ff;
+  background-color: #f24b53;
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
@@ -4528,7 +4505,7 @@ textarea.form-field {
 .woocommerce #respond input#submit.alt:active, .woocommerce a.button.alt:active,
 .woocommerce button.button.alt:active,
 .woocommerce input.button.alt:active {
-  background-color: #0027ff;
+  background-color: #ee1c25;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
@@ -4538,262 +4515,86 @@ textarea.form-field {
 .woocommerce input.button.alt:focus {
   outline: 0; }
 
-.button-style {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
-  .button-style a {
-    color: #fff;
-    display: inline-block; }
-  .button-style span {
-    color: #fff;
-    display: inline-block; }
-  .button-style:focus {
-    outline: 0; }
-  .button-style.button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    .button-style.button-inverse:hover, .button-style.button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  .button-style:hover, .button-style:active {
-    background-color: #0027ff;
-    color: #fff; }
+button {
+  cursor: pointer; }
 
-.button-large,
-button.button,
-a.button {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  padding: 15px 60px;
+.button-large {
+  padding: 16px 60px;
   font-size: 20px; }
-  .button-large a,
-  button.button a,
-  a.button a {
-    color: #fff;
-    display: inline-block; }
-  .button-large span,
-  button.button span,
-  a.button span {
-    color: #fff;
-    display: inline-block; }
-  .button-large:focus,
-  button.button:focus,
-  a.button:focus {
-    outline: 0; }
-  .button-large.button-inverse,
-  button.button.button-inverse,
-  a.button.button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    .button-large.button-inverse:hover, .button-large.button-inverse:active,
-    button.button.button-inverse:hover,
-    button.button.button-inverse:active,
-    a.button.button-inverse:hover,
-    a.button.button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  .button-large:hover, .button-large:active,
-  button.button:hover,
-  button.button:active,
-  a.button:hover,
-  a.button:active {
-    background-color: #0027ff;
-    color: #fff; }
 
 .button-medium {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  padding: 14px 25px;
-  font-size: 16px; }
-  .button-medium a {
-    color: #fff;
-    display: inline-block; }
-  .button-medium span {
-    color: #fff;
-    display: inline-block; }
-  .button-medium:focus {
-    outline: 0; }
-  .button-medium.button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    .button-medium.button-inverse:hover, .button-medium.button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  .button-medium:hover, .button-medium:active {
-    background-color: #0027ff;
-    color: #fff; }
+  padding: 10px 20px;
+  font-size: 15px; }
 
 .button-small {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   padding: 10px 15px;
   font-size: 14px; }
-  .button-small a {
+
+.button-inverse {
+  color: #fff;
+  background-color: #f24b53; }
+  .button-inverse:hover, .button-inverse:active {
     color: #fff;
-    display: inline-block; }
-  .button-small span {
-    color: #fff;
-    display: inline-block; }
-  .button-small:focus {
-    outline: 0; }
-  .button-small.button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    .button-small.button-inverse:hover, .button-small.button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  .button-small:hover, .button-small:active {
-    background-color: #0027ff;
-    color: #fff; }
+    background-color: #ee1c25; }
+
+.button-block {
+  display: block;
+  width: 100%; }
 
 [type="submit"] {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  padding: 5px 10px; }
-  [type="submit"] a {
-    color: #fff;
-    display: inline-block; }
-  [type="submit"] span {
-    color: #fff;
-    display: inline-block; }
-  [type="submit"]:focus {
-    outline: 0; }
-  [type="submit"].button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    [type="submit"].button-inverse:hover, [type="submit"].button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  [type="submit"]:hover, [type="submit"]:active {
-    background-color: #0027ff;
-    color: #fff; }
+  padding: 8px 10px; }
 
 @media (max-width: 544px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 10px 45px;
+  .button-large {
+    padding: 11px 45px;
     font-size: 12px; }
   .button-medium {
-    padding: 9px 22px;
+    padding: 8px 15px;
     font-size: 10px; }
   .button-small {
     padding: 6px 12px;
     font-size: 8px; } }
 
 @media (min-width: 545px) and (max-width: 768px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 10px 50px;
+  .button-large {
+    padding: 12px 50px;
     font-size: 13px; }
   .button-medium {
-    padding: 10px 25px;
+    padding: 10px 15px;
     font-size: 11px; }
   .button-small {
     padding: 7px 14px;
     font-size: 9px; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 10px 55px;
+  .button-large {
+    padding: 13px 55px;
     font-size: 14px; }
   .button-medium {
-    padding: 11px 28px;
+    padding: 12px 20px;
     font-size: 12px; }
   .button-small {
     padding: 8px 16px;
     font-size: 10px; } }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 15px 60px;
+  .button-large {
+    padding: 14px 60px;
     font-size: 16px; }
   .button-medium {
-    padding: 12px 32px;
-    font-size: 14px; }
+    padding: 15px 20px;
+    font-size: 15px; }
   .button-small {
     padding: 9px 18px;
     font-size: 12px; } }
 
 @media (min-width: 1367px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 10px 65px;
+  .button-large {
+    padding: 15px 65px;
     font-size: 18px; }
   .button-medium {
-    padding: 13px 35px;
-    font-size: 15px; }
+    padding: 15px 25px;
+    font-size: 16px; }
   .button-small {
     padding: 10px 20px;
     font-size: 13px; } }
@@ -4831,7 +4632,7 @@ ul.pagination {
       border-bottom: 1px solid silver;
       border-right: 1px solid silver; }
     ul.pagination li.page-item a.page-link:hover {
-      background-color: #213ccf;
+      background-color: #003980;
       color: #fff;
       border-color: transparent; }
     ul.pagination li.page-item span.current {
@@ -5141,17 +4942,12 @@ hr.style-four {
 
 .nav {
   display: block;
-  position: relative;
-  margin: 10px 15px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
-  border-radius: 4px;
-  text-align: center; }
+  position: relative; }
   .nav .menu {
     font-size: 0; }
     .nav .menu-item {
       display: inline-block;
-      vertical-align: middle;
-      padding: 5px; }
+      vertical-align: middle; }
       .nav .menu-item .menu-item-has-children-arrow {
         display: none; }
       .nav .menu-item-close {
@@ -5216,7 +5012,7 @@ hr.style-four {
         opacity: 1; }
     .nav .menu-link {
       display: block;
-      padding: 8px 10px;
+      padding: 8px 8px;
       color: #000;
       font-size: 16px;
       line-height: 1.3;
@@ -5305,7 +5101,7 @@ hr.style-four {
       display: block;
       width: 100%;
       height: 2px;
-      background-color: #199ec7; }
+      background-color: #003980; }
     .hamburger-inner::before, .hamburger-inner::after {
       content: '';
       position: absolute;
@@ -5464,7 +5260,8 @@ hr.style-four {
     .header-icon:hover {
       background-color: #0050b3; }
   .header-btn {
-    margin-left: 10px; }
+    margin-left: 10px;
+    padding: 10px 15px; }
   .header-phone {
     margin-left: -4px; }
   .header-search {
@@ -5522,9 +5319,11 @@ hr.style-four {
       .header-search-icon:hover, .header-search-icon:focus {
         color: #ee1c25; }
 
-.logo, .logo-link, .logo-img {
-  display: inline-block;
-  vertical-align: middle; }
+.logo {
+  margin-bottom: 10px; }
+  .logo, .logo-link, .logo-img {
+    display: inline-block;
+    vertical-align: middle; }
 
 .phone {
   font-size: 0; }
@@ -5780,6 +5579,9 @@ img {
 .d-block {
   display: block; }
 
+.pull-right {
+  float: right; }
+
 .hero {
   padding: 7% 0 10%;
   background: #f3f5f9 none no-repeat center center;
@@ -5855,7 +5657,14 @@ img {
     .section-desc-md {
       margin-top: 5px;
       font-weight: 500;
-      font-size: 28px; }
+      font-size: 16px; }
+      @media (min-width: 480px) and (max-width: 1199px) {
+        .section-desc-md {
+          font-size: 18px;
+          font-size: calc(0.01667 * 100vw + 8px); } }
+      @media (min-width: 1200px) {
+        .section-desc-md {
+          font-size: 28px; } }
   .section-form {
     max-width: 975px;
     margin-left: auto;
@@ -5868,10 +5677,8 @@ img {
     vertical-align: top;
     width: 33.33333%;
     padding: 0 5px; }
-    .service-column:first-child {
+    .service-column:first-child .service-desc {
       text-align: right; }
-      .service-column:first-child .service-desc {
-        text-align: right; }
   .service-item {
     margin-bottom: 35px; }
   .service-title {
@@ -5955,7 +5762,7 @@ img {
     font-style: italic;
     color: #00397f;
     max-width: 480px;
-    margin-bottom: 0; }
+    margin-bottom: 20px; }
     @media (min-width: 480px) and (max-width: 1199px) {
       .inform-title {
         font-size: 24px;
@@ -6035,6 +5842,72 @@ img {
 .list-space li {
   margin-bottom: 10px; }
 
+.stage-item {
+  margin-bottom: 20px; }
+
+.stage-column {
+  position: relative;
+  padding: 0 80px; }
+  .stage-column::before, .stage-column::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    border-left: 1px dashed #d7d7d7;
+    height: 100%; }
+  .stage-column.pull-right::before {
+    content: '';
+    left: 0; }
+  .stage-column.pull-left::after {
+    content: '';
+    right: 0; }
+
+.stage-index {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #ee1c25;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+  .stage-index.is-right {
+    right: -18px; }
+  .stage-index.is-left {
+    left: -18px; }
+
+.stage-days {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: letter-spacing(40, 25);
+  margin-bottom: 15px;
+  color: #003980; }
+  @media (min-width: 480px) and (max-width: 1199px) {
+    .stage-days {
+      font-size: 22px;
+      font-size: calc(0.00972 * 100vw + 13.33333px); } }
+  @media (min-width: 1200px) {
+    .stage-days {
+      font-size: 25px; } }
+
+.stage-desc,
+.stage-desc p {
+  font-size: 15px;
+  line-height: 1.33333;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #000; }
+
+.stage-desc p:first-child {
+  margin-top: 15px; }
+
 .review-wrapper {
   position: relative;
   max-width: 945px;
@@ -6044,7 +5917,8 @@ img {
 .review-quote {
   position: absolute;
   top: 25px;
-  right: -5px; }
+  right: -5px;
+  z-index: 1; }
 
 .review-container {
   position: relative;
@@ -6176,6 +6050,7 @@ img {
   position: fixed;
   top: 50%;
   right: 0;
+  z-index: 100;
   border: 0;
   display: inline-block;
   padding: 13px 15px;
@@ -6196,3 +6071,95 @@ img {
   transform-origin: right top; }
   .btn-sticky:hover {
     background-color: #ef2a33; }
+
+@media only screen and (max-width: 1024px) {
+  .on-tablet-hide {
+    display: none; }
+  .logo .svg-icon {
+    width: 75px;
+    height: 49px; }
+  .header-top, .header-bottom {
+    display: block;
+    text-align: center;
+    margin-bottom: 0; }
+  .header-item {
+    display: inline-block;
+    margin: 0 5px 10px;
+    text-align: center; }
+  .service-column {
+    width: auto;
+    padding: 0;
+    text-align: left; }
+    .service-column:first-child .service-desc {
+      text-align: left; }
+  .service-item {
+    margin-bottom: 20px; }
+  .stage-column {
+    padding: 0 40px; } }
+
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 30px 0; }
+    .section-container {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .section-head {
+      margin-bottom: 30px; }
+  .form-row {
+    margin-bottom: 15px; }
+  .form-field {
+    padding: 10px;
+    font-size: 14px; }
+  .stage-column {
+    text-align: left;
+    padding: 0 0 0 55px; }
+    .stage-column::before, .stage-column::after {
+      content: none !important; }
+  .stage-index {
+    top: -8px;
+    left: 10px !important;
+    right: auto !important; }
+  .adv-item {
+    display: block;
+    width: auto;
+    padding: 20px;
+    margin: 0 0 20px; }
+  .review-container {
+    padding: 15px; }
+  .review-avatar {
+    width: 100px; }
+  .review-content {
+    padding-top: 0;
+    margin-left: 115px; }
+  .review-quote {
+    display: none; }
+  .review-user {
+    font-size: 16px; }
+  .review-position {
+    font-size: 12px; }
+  .review-desc {
+    margin-top: 10px; }
+  .review-navigation {
+    left: 20px; }
+  .review-btn {
+    width: 35px;
+    height: 35px;
+    line-height: 35px; }
+  .btn-sticky {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 14px; }
+  .pre-footer {
+    padding: 30px 0 0; } }
+
+@media only screen and (max-width: 544px) {
+  .header .logo {
+    display: none; } }
+
+@media only screen and (max-width: 480px) {
+  .on-mobile-hide {
+    display: none; }
+  .review-avatar {
+    display: none; }
+  .review-content {
+    margin-left: 0; } }

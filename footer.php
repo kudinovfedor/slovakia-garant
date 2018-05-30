@@ -23,7 +23,7 @@
     </div>
 </footer>
 
-<button class="btn-sticky <?php echo get_lang_class('js-stock'); ?>" type="button">
+<button class="btn-sticky on-mobile-hide <?php echo get_lang_class('js-stock'); ?>" type="button">
     <?php _e('STOCK! -10% for all prices', 'brainworks'); ?>
 </button>
 

@@ -48,8 +48,8 @@ $linkFontColorActive: lighten($linkFontColor, 20%);
 //BUTTONS
 $buttonFontColor: #fff;
 $buttonFontColorActive: #fff;
-$buttonBgColor: $themeColorTwo;
-$buttonBgColorActive: lighten($themeColorTwo, 10%);
+$buttonBgColor: #ee1c25;
+$buttonBgColorActive: lighten($buttonBgColor, 10%);
 $buttonBorderColor: #000;
 $buttonOutlinedFirstColor: $themeColorTwo;
 $buttonOutlinedSecondColor: #fff;
@@ -87,10 +87,10 @@ $formFieldBackgroundColor: #fff;
 // Menu
 $navArrowColor: white;
 $navHeaderMobileBGColor: #fff;
-$navHamburgerMobileColor: #199ec7;
+$navHamburgerMobileColor: #003980;
 
 // Pagination
 $paginationActiveLink: $themeColorTwo;
 $paginationActiveLinkText: #fff;
-$paginationLinkOnHover: #213ccf;
+$paginationLinkOnHover: #003980;
 $paginationLinkOnHoverText: #fff;

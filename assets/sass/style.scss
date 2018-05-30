@@ -38,8 +38,8 @@ Tags: one-column, two-columns, full-width-template, e-commerce
 @import "elements/responsive-titles";
 @import "elements/scroll-top";
 @import "elements/forms";
-//@import "elements/buttons";
-@import "elements/buttons-2";
+@import "elements/buttons";
+//@import "elements/buttons-2";
 //@import "elements/images";
 @import "elements/links";
 @import "elements/pagination";
@@ -174,6 +174,10 @@ img {
     display: block;
 }
 
+.pull-right {
+    float: right;
+}
+
 .hero {
     padding: 7% 0 10%;
     background: #f3f5f9 none no-repeat center center;
@@ -255,7 +259,7 @@ img {
         &-md {
             margin-top: 5px;
             font-weight: 500;
-            font-size: 28px;
+            @include responsive-font-size(16px, 28px, 480px, 1200px, 18px);
         }
     }
 
@@ -277,8 +281,6 @@ img {
         padding: 0 5px;
 
         &:first-child {
-            text-align: right;
-
             .service-desc {
                 text-align: right;
             }
@@ -392,7 +394,7 @@ img {
         font-style: italic;
         color: #00397f;
         max-width: 480px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
 
         &::after {
             content: '';
@@ -494,6 +496,92 @@ img {
     }
 }
 
+.stage {
+    $offset: 80px;
+
+    &-item {
+        margin-bottom: 20px;
+    }
+
+    &-column {
+        position: relative;
+        padding: 0 $offset;
+
+        &::before,
+        &::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            border-left: 1px dashed #d7d7d7;
+            height: 100%;
+        }
+
+        &.pull-right {
+            &::before {
+                content: '';
+                left: 0;
+            }
+        }
+
+        &.pull-left {
+            &::after {
+                content: '';
+                right: 0;
+            }
+        }
+    }
+
+    &-index {
+        $size: 35px;
+        $index_offset: round($size/2);
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        width: $size;
+        height: $size;
+        color: #fff;
+        font-size: 22px;
+        line-height: $size;
+        text-align: center;
+        background-color: #ee1c25;
+        @include border-radius(50%);
+
+        &.is-right {
+            right: -$index_offset;
+        }
+
+        &.is-left {
+            left: -$index_offset;
+        }
+    }
+
+    &-days {
+        @include responsive-font-size(18px, 25px, 480px, 1200px, 22px);
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: letter-spacing(40, 25);
+        margin-bottom: 15px;
+        color: #003980;
+    }
+
+    &-desc {
+        &,
+        p {
+            font-size: 15px;
+            line-height: (20/15);
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        p:first-child {
+            margin-top: 15px;
+        }
+    }
+}
+
 .review {
     &-wrapper {
         position: relative;
@@ -506,6 +594,7 @@ img {
         position: absolute;
         top: 25px;
         right: -5px;
+        z-index: 1;
     }
 
     &-container {
@@ -682,6 +771,7 @@ img {
     position: fixed;
     top: 50%;
     right: 0;
+    z-index: 100;
     border: 0;
     display: inline-block;
     padding: 13px 15px;
@@ -696,5 +786,183 @@ img {
 
     &:hover {
         background-color: lighten(#ee1c25, 3%);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .on-tablet-hide {
+        display: none;
+    }
+
+    .logo {
+        .svg-icon {
+            width: 75px;
+            height: 49px;
+        }
+    }
+
+    .header {
+        &-top,
+        &-bottom {
+            display: block;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        &-item {
+            display: inline-block;
+            margin: 0 5px 10px;
+            text-align: center;
+        }
+    }
+
+    .service {
+        &-column {
+            width: auto;
+            padding: 0;
+            text-align: left;
+
+            &:first-child {
+                .service-desc {
+                    text-align: left;
+                }
+            }
+        }
+
+        &-item {
+            margin-bottom: 20px;
+        }
+    }
+
+    .stage {
+        &-column {
+            padding: 0 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+        padding: 30px 0;
+
+        &-container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &-head {
+            margin-bottom: 30px;
+        }
+    }
+
+    .form {
+        &-row {
+            margin-bottom: 15px;
+        }
+
+        &-field {
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .stage {
+        &-column {
+            text-align: left;
+            padding: 0 0 0 55px;
+
+            &::before,
+            &::after {
+                content: none !important;
+            }
+        }
+
+        &-index {
+            top: -8px;
+            left: 10px !important;
+            right: auto !important;
+        }
+    }
+
+    .adv {
+        &-item {
+            display: block;
+            width: auto;
+            padding: 20px;
+            margin: 0 0 20px;
+        }
+    }
+
+    .review {
+        &-container {
+            padding: 15px;
+        }
+
+        &-avatar {
+            width: 100px;
+        }
+
+        &-content {
+            padding-top: 0;
+            margin-left: 115px;
+        }
+
+        &-quote {
+            display: none;
+        }
+
+        &-user {
+            font-size: 16px;
+        }
+
+        &-position {
+            font-size: 12px;
+        }
+
+        &-desc {
+            margin-top: 10px;
+        }
+
+        &-navigation {
+            left: 20px;
+        }
+
+        &-btn {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+        }
+    }
+
+    .btn-sticky {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 14px;
+    }
+
+    .pre-footer {
+        padding: 30px 0 0;
+    }
+}
+
+@media only screen and (max-width: 544px) {
+    .header .logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .on-mobile-hide {
+        display: none;
+    }
+
+    .review {
+        &-avatar {
+            display: none;
+        }
+
+        &-content {
+            margin-left: 0;
+        }
     }
 }

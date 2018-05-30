@@ -35,8 +35,8 @@ button {
 
 .button-medium {
     @extend %button-style;
-    padding: 14px 25px;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 15px;
 }
 
 .button-small {
@@ -62,7 +62,7 @@ button {
     width: 100%;
 }
 
-button[type="submit"] {
+[type="submit"] {
     @extend %button-style;
     padding: 8px 10px;
 }
@@ -74,7 +74,7 @@ button[type="submit"] {
     }
 
     .button-medium {
-        padding: 9px 22px;
+        padding: 8px 15px;
         font-size: 10px;
     }
 
@@ -91,7 +91,7 @@ button[type="submit"] {
     }
 
     .button-medium {
-        padding: 10px 25px;
+        padding: 10px 15px;
         font-size: 11px;
     }
 
@@ -108,7 +108,7 @@ button[type="submit"] {
     }
 
     .button-medium {
-        padding: 11px 28px;
+        padding: 12px 20px;
         font-size: 12px;
     }
 
@@ -125,8 +125,8 @@ button[type="submit"] {
     }
 
     .button-medium {
-        padding: 12px 32px;
-        font-size: 14px;
+        padding: 15px 20px;
+        font-size: 15px;
     }
 
     .button-small {
@@ -142,8 +142,8 @@ button[type="submit"] {
     }
 
     .button-medium {
-        padding: 13px 35px;
-        font-size: 15px;
+        padding: 15px 25px;
+        font-size: 16px;
     }
 
     .button-small {
