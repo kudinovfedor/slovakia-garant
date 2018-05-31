@@ -435,6 +435,11 @@
 
             &-item {
                 display: block;
+
+                &-has-children {
+                    padding-right: 0;
+                }
+
                 &::after {
                     display: none;
                 }
@@ -472,12 +477,14 @@
         }
 
         .sub-menu {
+            background-color: #383838;
             position: static;
             width: auto;
             display: none;
             visibility: visible;
             @include opacity(1);
             @include box-shadow(none);
+            @include transition(none);
 
             &-item {
                 &::after {

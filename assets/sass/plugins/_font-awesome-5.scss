@@ -4169,17 +4169,19 @@
 
 $font_awesome_version: '5.0.13';
 $font_awesome_url_cdn: 'https://use.fontawesome.com/releases/v#{$font_awesome_version}/webfonts';
+$font_awesome_url_folder: 'assets/fonts/fontawesome5';
+$font_awesome_url: $font_awesome_url_folder;
 
 @font-face {
     font-family: Font Awesome\ 5 Brands;
     font-style: normal;
     font-weight: 400;
-    src: url('#{$font_awesome_url_cdn}/fa-brands-400.eot');
-    src: url('#{$font_awesome_url_cdn}/fa-brands-400.eot?#iefix') format('embedded-opentype'),
-    url('#{$font_awesome_url_cdn}/fa-brands-400.woff2') format('woff2'),
-    url('#{$font_awesome_url_cdn}/fa-brands-400.woff') format('woff'),
-    url('#{$font_awesome_url_cdn}/fa-brands-400.ttf') format('truetype'),
-    url('#{$font_awesome_url_cdn}/fa-brands-400.svg#fontawesome') format('svg')
+    src: url('#{$font_awesome_url}/fa-brands-400.eot');
+    src: url('#{$font_awesome_url}/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+    url('#{$font_awesome_url}/fa-brands-400.woff2') format('woff2'),
+    url('#{$font_awesome_url}/fa-brands-400.woff') format('woff'),
+    url('#{$font_awesome_url}/fa-brands-400.ttf') format('truetype'),
+    url('#{$font_awesome_url}/fa-brands-400.svg#fontawesome') format('svg')
 }
 
 .fab {
@@ -4190,12 +4192,12 @@ $font_awesome_url_cdn: 'https://use.fontawesome.com/releases/v#{$font_awesome_ve
     font-family: Font Awesome\ 5 Free;
     font-style: normal;
     font-weight: 400;
-    src: url('#{$font_awesome_url_cdn}/fa-regular-400.eot');
-    src: url('#{$font_awesome_url_cdn}/fa-regular-400.eot?#iefix') format('embedded-opentype'),
-    url('#{$font_awesome_url_cdn}/fa-regular-400.woff2') format('woff2'),
-    url('#{$font_awesome_url_cdn}/fa-regular-400.woff') format('woff'),
-    url('#{$font_awesome_url_cdn}/fa-regular-400.ttf') format('truetype'),
-    url('#{$font_awesome_url_cdn}/fa-regular-400.svg#fontawesome') format('svg')
+    src: url('#{$font_awesome_url}/fa-regular-400.eot');
+    src: url('#{$font_awesome_url}/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+    url('#{$font_awesome_url}/fa-regular-400.woff2') format('woff2'),
+    url('#{$font_awesome_url}/fa-regular-400.woff') format('woff'),
+    url('#{$font_awesome_url}/fa-regular-400.ttf') format('truetype'),
+    url('#{$font_awesome_url}/fa-regular-400.svg#fontawesome') format('svg')
 }
 
 .far {
@@ -4206,12 +4208,12 @@ $font_awesome_url_cdn: 'https://use.fontawesome.com/releases/v#{$font_awesome_ve
     font-family: Font Awesome\ 5 Free;
     font-style: normal;
     font-weight: 900;
-    src: url('#{$font_awesome_url_cdn}/fa-solid-900.eot');
-    src: url('#{$font_awesome_url_cdn}/fa-solid-900.eot?#iefix') format('embedded-opentype'),
-    url('#{$font_awesome_url_cdn}/fa-solid-900.woff2') format('woff2'),
-    url('#{$font_awesome_url_cdn}/fa-solid-900.woff') format('woff'),
-    url('#{$font_awesome_url_cdn}/fa-solid-900.ttf') format('truetype'),
-    url('#{$font_awesome_url_cdn}/fa-solid-900.svg#fontawesome') format('svg')
+    src: url('#{$font_awesome_url}/fa-solid-900.eot');
+    src: url('#{$font_awesome_url}/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+    url('#{$font_awesome_url}/fa-solid-900.woff2') format('woff2'),
+    url('#{$font_awesome_url}/fa-solid-900.woff') format('woff'),
+    url('#{$font_awesome_url}/fa-solid-900.ttf') format('truetype'),
+    url('#{$font_awesome_url}/fa-solid-900.svg#fontawesome') format('svg')
 }
 
 .fa, .far, .fas {

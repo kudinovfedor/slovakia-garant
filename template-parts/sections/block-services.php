@@ -12,10 +12,10 @@
             <div class="container">
                 <header class="section-head">
                     <?php if ( ! empty($services['title'])) { ?>
-                        <h2 class="section-headline"><?= esc_html($services['title']); ?></h2>
+                        <h2 class="section-headline"><?php echo esc_html($services['title']); ?></h2>
                     <?php } ?>
                     <?php if ( ! empty($services['desc'])) { ?>
-                        <p class="section-desc"><?= esc_html($services['desc']); ?></p>
+                        <p class="section-desc"><?php echo esc_html($services['desc']); ?></p>
                     <?php } ?>
                 </header>
                 <?php if (count($services['lists'])) {
@@ -29,13 +29,13 @@
                                 } ?>
                                 <section class="service-item">
                                     <?php if ( ! empty($item['title'])) { ?>
-                                        <h3 class="service-title"><?= esc_html($item['title']); ?></h3>
+                                        <h3 class="service-title"><?php echo esc_html($item['title']); ?></h3>
                                     <?php }
                                     if ( ! empty(trim($item['desc']))) { ?>
-                                        <p class="service-desc"><?= esc_html($item['desc']); ?></p>
+                                        <p class="service-desc"><?php echo esc_html($item['desc']); ?></p>
                                     <?php }
                                     if ( ! empty($item['list'])) { ?>
-                                        <div class="service-desc"><?= strip_tags($item['list'], '<ul><li>'); ?></div>
+                                        <div class="service-desc"><?php echo strip_tags($item['list'], '<ul><li>'); ?></div>
                                     <?php } ?>
                                 </section>
                             <?php } ?>
@@ -63,13 +63,13 @@
                                 } ?>
                                 <section class="service-item">
                                     <?php if ( ! empty($item['title'])) { ?>
-                                        <h3 class="service-title"><?= esc_html($item['title']); ?></h3>
+                                        <h3 class="service-title"><?php echo esc_html($item['title']); ?></h3>
                                     <?php }
                                     if ( ! empty(trim($item['desc']))) { ?>
-                                        <p class="service-desc"><?= esc_html($item['desc']); ?></p>
+                                        <p class="service-desc"><?php echo esc_html($item['desc']); ?></p>
                                     <?php }
                                     if ( ! empty($item['list'])) { ?>
-                                        <div class="service-desc"><?= strip_tags($item['list'], '<ul><li>'); ?></div>
+                                        <div class="service-desc"><?php echo strip_tags($item['list'], '<ul><li>'); ?></div>
                                     <?php } ?>
                                 </section>
                             <?php } ?>

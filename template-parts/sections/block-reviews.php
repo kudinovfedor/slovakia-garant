@@ -30,10 +30,10 @@ if ($query->have_posts() && $displayed) : ?>
             <?php if (function_exists('ot_get_option')) { ?>
                 <header class="section-head">
                     <?php if ( ! empty($reviews['title'])) { ?>
-                        <h2 class="section-headline"><?= esc_html($reviews['title']); ?></h2>
+                        <h2 class="section-headline"><?php echo esc_html($reviews['title']); ?></h2>
                     <?php } ?>
                     <?php if ( ! empty($reviews['desc'])) { ?>
-                        <p class="section-desc"><?= esc_html(strip_tags($reviews['desc'])); ?></p>
+                        <p class="section-desc"><?php echo esc_html(strip_tags($reviews['desc'])); ?></p>
                     <?php } ?>
                 </header>
             <?php } ?>
@@ -74,7 +74,7 @@ if ($query->have_posts() && $displayed) : ?>
                 </svg>
                 <div class="text-right">
                     <a href="<?php echo get_post_type_archive_link('reviews'); ?>"
-                       class="button-medium"><?php _e('See all reviews', 'brainworks'); ?></a>
+                       class="button-medium button-outline"><?php _e('See all reviews', 'brainworks'); ?></a>
                 </div>
             </div>
         </div>

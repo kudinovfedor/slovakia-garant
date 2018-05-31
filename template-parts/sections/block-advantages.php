@@ -41,44 +41,44 @@
             <div class="container">
                 <header class="section-head">
                     <?php if ( ! empty($adv['title'])) { ?>
-                        <h2 class="section-headline"><?= esc_html($adv['title']); ?></h2>
+                        <h2 class="section-headline"><?php echo esc_html($adv['title']); ?></h2>
                     <?php } ?>
                     <?php if ( ! empty($adv['desc'])) { ?>
-                        <p class="section-desc"><?= esc_html(strip_tags($adv['desc'])); ?></p>
+                        <p class="section-desc"><?php echo esc_html(strip_tags($adv['desc'])); ?></p>
                     <?php } ?>
                 </header>
                 <?php if ($adv['display'] === 'on' && count($adv['lists'])) { ?>
                     <ul class="adv">
                         <?php foreach ($adv['lists'] as $key => $item) { ?>
                             <li class="adv-item">
-                                <h3 class="adv-title"><?= esc_html($item['title']); ?></h3>
-                                <p class="adv-desc"><?= esc_html($item['desc']); ?></p>
+                                <h3 class="adv-title"><?php echo esc_html($item['title']); ?></h3>
+                                <p class="adv-desc"><?php echo esc_html($item['desc']); ?></p>
                                 <?php if (array_key_exists($item['icon'], $adv_icons)) {
                                     $width  = $adv_icons[$item['icon']]['width'];
                                     $height = $adv_icons[$item['icon']]['height'];
                                     $color  = $adv_icons[$item['icon']]['fill'];
                                     ?>
-                                    <svg class="adv-icon svg-icon" width="<?= esc_attr($width); ?>"
-                                         height="<?= esc_attr($height); ?>" fill="<?= esc_attr($color); ?>">
-                                        <use xlink:href="#<?= esc_attr($item['icon']); ?>"></use>
+                                    <svg class="adv-icon svg-icon" width="<?php echo esc_attr($width); ?>"
+                                         height="<?php echo esc_attr($height); ?>" fill="<?php echo esc_attr($color); ?>">
+                                        <use xlink:href="#<?php echo esc_attr($item['icon']); ?>"></use>
                                     </svg>
                                 <?php } ?>
                             </li>
                         <?php } ?>
                     </ul>
                     <div class="text-center on-mobile-show">
-                        <button class="button-medium <?= get_lang_class('js-adv-order-service') ?>" type="button"><?php _e('Order service', 'brainworks'); ?></button>
+                        <button class="button-medium button-outline <?php echo get_lang_class('js-adv-order-service') ?>" type="button"><?php _e('Order service', 'brainworks'); ?></button>
                     </div>
                 <?php }
                 if ($inform['display'] === 'on') { ?>
                     <div class="row inform">
                         <?php if ( ! empty($inform['title'])) { ?>
                             <div class="col-md-6">
-                                <h3 class="inform-title"><?= esc_html($inform['title']); ?></h3>
+                                <h3 class="inform-title"><?php echo esc_html($inform['title']); ?></h3>
                             </div>
                         <?php }
                         if ( ! empty($inform['desc'])) { ?>
-                            <div class="col-md-6 inform-desc"><?= strip_tags($inform['desc'], '<p><br>'); ?></div>
+                            <div class="col-md-6 inform-desc"><?php echo strip_tags($inform['desc'], '<p><br>'); ?></div>
                         <?php } ?>
                     </div>
                 <?php } ?>

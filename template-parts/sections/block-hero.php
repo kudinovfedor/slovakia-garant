@@ -10,15 +10,15 @@
 
     if ($hero['display'] === 'on') { ?>
         <!-- Hero Block -->
-        <div class="hero" style="background-image: url('<?= esc_url($hero['bg']['background-image']); ?>');">
+        <div class="hero" style="background-image: url('<?php echo esc_url($hero['bg']['background-image']); ?>');">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
                         <?php if ( ! empty($hero['title'])) { ?>
-                            <div class="hero-title"><?= strip_tags($hero['title'], '<br>'); ?></div>
+                            <div class="hero-title"><?php echo strip_tags($hero['title'], '<br>'); ?></div>
                         <?php } ?>
                         <?php if ( ! empty($hero['desc'])) { ?>
-                            <p class="hero-desc"><?= strip_tags($hero['desc'], '<br>'); ?></p>
+                            <p class="hero-desc"><?php echo strip_tags($hero['desc'], '<br>'); ?></p>
                         <?php } ?>
                         <button class="button-medium hero-btn <?php the_lang_class('js-free-consult'); ?>"
                                 type="button"><?php _e('Free consultation', 'brainworks'); ?></button>

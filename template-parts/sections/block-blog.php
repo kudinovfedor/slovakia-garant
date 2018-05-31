@@ -30,10 +30,10 @@ if ($query->have_posts() && $displayed) { ?>
             <?php if (function_exists('ot_get_option')) { ?>
                 <header class="section-head">
                     <?php if ( ! empty($blog['title'])) { ?>
-                        <h2 class="section-headline"><?= esc_html($blog['title']); ?></h2>
+                        <h2 class="section-headline"><?php echo esc_html($blog['title']); ?></h2>
                     <?php } ?>
                     <?php if ( ! empty($blog['desc'])) { ?>
-                        <p class="section-desc"><?= esc_html(strip_tags($blog['desc'])); ?></p>
+                        <p class="section-desc"><?php echo esc_html(strip_tags($blog['desc'])); ?></p>
                     <?php } ?>
                 </header>
             <?php } ?>
@@ -55,7 +55,7 @@ if ($query->have_posts() && $displayed) { ?>
                 <?php endwhile; ?>
             </ul>
             <div class="text-center">
-                <a href="<?php echo get_page_link(11); ?>" class="button-medium"><?php _e('View all articles',
+                <a href="<?php echo get_page_link(11); ?>" class="button-medium button-outline"><?php _e('View all articles',
                         'brainworks'); ?></a>
             </div>
         </div>

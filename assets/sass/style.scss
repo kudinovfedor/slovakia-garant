@@ -747,9 +747,24 @@ img {
 }
 
 .map {
+    position: relative;
     padding-top: 80px;
     padding-bottom: 90px;
     background-color: #333;
+
+    #google-map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+    }
+
+    .container {
+        z-index: 1;
+    }
 
     &-info {
         max-width: 360px;
@@ -875,6 +890,10 @@ img {
         }
     }
 
+    .service-price-column {
+        float: left;
+    }
+
     .stage {
         &-column {
             text-align: left;
@@ -940,6 +959,20 @@ img {
             width: 35px;
             height: 35px;
             line-height: 35px;
+        }
+    }
+
+    .map {
+        padding: 20px 0 0;
+
+        &-info {
+            padding: 20px;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #google-map {
+            position: relative;
         }
     }
 

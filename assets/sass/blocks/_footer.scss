@@ -53,6 +53,17 @@
             text-decoration: underline;
         }
     }
+
+    .button-outline {
+        color: #ee1c25;
+        padding: 10px 20px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+        }
+    }
 }
 
 .copyright {

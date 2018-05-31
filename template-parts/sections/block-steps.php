@@ -14,10 +14,10 @@
             <div class="container">
                 <header class="section-head">
                     <?php if ( ! empty($steps['title'])) { ?>
-                        <h2 class="section-headline section-without-dash"><?= esc_html($steps['title']); ?></h2>
+                        <h2 class="section-headline section-without-dash"><?php echo esc_html($steps['title']); ?></h2>
                     <?php } ?>
                     <?php if ( ! empty($steps['desc'])) { ?>
-                        <p class="section-desc section-desc-md"><?= esc_html(strip_tags($steps['desc'])); ?></p>
+                        <p class="section-desc section-desc-md"><?php echo esc_html(strip_tags($steps['desc'])); ?></p>
                     <?php } ?>
                 </header>
                 <?php if (count($steps['lists'])) { ?>
@@ -25,11 +25,11 @@
                         <?php foreach ($steps['lists'] as $key => $item) {
                             $i = $key % 2; ?>
                             <li class="stage-item row">
-                                <div class="col-md-6 stage-column <?= $i === 0 ? 'pull-right text-left' : 'pull-left text-right'; ?>">
-                                    <span class="stage-index <?= $i === 0 ? 'is-left' : 'is-right'; ?>"><?= ++$key; ?></span>
-                                    <div class="stage-days"><?= esc_html($item['days']); ?></div>
+                                <div class="col-md-6 stage-column <?php echo $i === 0 ? 'pull-right text-left' : 'pull-left text-right'; ?>">
+                                    <span class="stage-index <?php echo $i === 0 ? 'is-left' : 'is-right'; ?>"><?php echo ++$key; ?></span>
+                                    <div class="stage-days"><?php echo esc_html($item['days']); ?></div>
                                     <div class="stage-desc">
-                                        <?= strip_tags($item['desc'], '<p><b><strong><br>'); ?>
+                                        <?php echo strip_tags($item['desc'], '<p><b><strong><br>'); ?>
                                     </div>
                                 </div>
                             </li>

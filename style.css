@@ -3432,8 +3432,8 @@ a img.aligncenter {
   font-family: Font Awesome\ 5 Brands;
   font-style: normal;
   font-weight: 400;
-  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.eot");
-  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("assets/fonts/fontawesome5/fa-brands-400.eot");
+  src: url("assets/fonts/fontawesome5/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("assets/fonts/fontawesome5/fa-brands-400.woff2") format("woff2"), url("assets/fonts/fontawesome5/fa-brands-400.woff") format("woff"), url("assets/fonts/fontawesome5/fa-brands-400.ttf") format("truetype"), url("assets/fonts/fontawesome5/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: Font Awesome\ 5 Brands; }
@@ -3442,8 +3442,8 @@ a img.aligncenter {
   font-family: Font Awesome\ 5 Free;
   font-style: normal;
   font-weight: 400;
-  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.eot");
-  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("assets/fonts/fontawesome5/fa-regular-400.eot");
+  src: url("assets/fonts/fontawesome5/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("assets/fonts/fontawesome5/fa-regular-400.woff2") format("woff2"), url("assets/fonts/fontawesome5/fa-regular-400.woff") format("woff"), url("assets/fonts/fontawesome5/fa-regular-400.ttf") format("truetype"), url("assets/fonts/fontawesome5/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-weight: 400; }
@@ -3452,8 +3452,8 @@ a img.aligncenter {
   font-family: Font Awesome\ 5 Free;
   font-style: normal;
   font-weight: 900;
-  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.eot");
-  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("assets/fonts/fontawesome5/fa-solid-900.eot");
+  src: url("assets/fonts/fontawesome5/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("assets/fonts/fontawesome5/fa-solid-900.woff2") format("woff2"), url("assets/fonts/fontawesome5/fa-solid-900.woff") format("woff"), url("assets/fonts/fontawesome5/fa-solid-900.ttf") format("truetype"), url("assets/fonts/fontawesome5/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa, .far, .fas {
   font-family: Font Awesome\ 5 Free; }
@@ -4537,6 +4537,14 @@ button {
     color: #fff;
     background-color: #ee1c25; }
 
+.button-outline {
+  border-color: #ee1c25;
+  background-color: transparent;
+  color: #000; }
+  .button-outline:hover, .button-outline:focus, .button-outline:active {
+    background-color: #ee1c25;
+    color: #fff; }
+
 .button-block {
   display: block;
   width: 100%; }
@@ -4817,38 +4825,31 @@ hr.style-four {
 .fa.reversed-color {
   color: #00ff0a; }
 
-::-webkit-scrollbar {
-  width: 7px;
-  height: 2px; }
-
-::-webkit-scrollbar-button {
-  width: 0;
-  height: 0; }
-
-::-webkit-scrollbar-thumb {
-  background: #7eb1ea;
-  border: 0 none #fff;
-  border-radius: 0; }
-
-::-webkit-scrollbar-thumb:hover {
-  background: #fff; }
-
-::-webkit-scrollbar-thumb:active {
-  background: #aaa; }
-
-::-webkit-scrollbar-track {
-  background: #14151d;
-  border: 0 none #fff;
-  border-radius: 0; }
-
-::-webkit-scrollbar-track:hover {
-  background: #111219; }
-
-::-webkit-scrollbar-track:active {
-  background: #333; }
-
-::-webkit-scrollbar-corner {
-  background: transparent; }
+@media only screen and (min-width: 480px) {
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 2px; }
+  ::-webkit-scrollbar-button {
+    width: 0;
+    height: 0; }
+  ::-webkit-scrollbar-thumb {
+    background: #7eb1ea;
+    border: 0 none #fff;
+    border-radius: 0; }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff; }
+  ::-webkit-scrollbar-thumb:active {
+    background: #aaa; }
+  ::-webkit-scrollbar-track {
+    background: #14151d;
+    border: 0 none #fff;
+    border-radius: 0; }
+  ::-webkit-scrollbar-track:hover {
+    background: #111219; }
+  ::-webkit-scrollbar-track:active {
+    background: #333; }
+  ::-webkit-scrollbar-corner {
+    background: transparent; } }
 
 /* BLOCKS */
 .main-nav .menu-container {
@@ -5182,6 +5183,8 @@ hr.style-four {
         right: 10px; }
       .nav .menu-item {
         display: block; }
+        .nav .menu-item-has-children {
+          padding-right: 0; }
         .nav .menu-item::after {
           display: none; }
         .nav .menu-item .menu-item-has-children-arrow {
@@ -5203,6 +5206,7 @@ hr.style-four {
         color: #fff;
         display: block; }
     .nav .sub-menu {
+      background-color: #383838;
       position: static;
       width: auto;
       display: none;
@@ -5211,7 +5215,11 @@ hr.style-four {
       opacity: 1;
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
-      box-shadow: none; }
+      box-shadow: none;
+      -moz-transition: none;
+      -o-transition: none;
+      -webkit-transition: none;
+      transition: none; }
       .nav .sub-menu-item::after {
         display: none; }
       .nav .sub-menu-item .menu-item-has-children-arrow {
@@ -5449,6 +5457,11 @@ hr.style-four {
     text-decoration: none; }
     .pre-footer a:hover {
       text-decoration: underline; }
+  .pre-footer .button-outline {
+    color: #ee1c25;
+    padding: 10px 20px; }
+    .pre-footer .button-outline:hover, .pre-footer .button-outline:focus, .pre-footer .button-outline:active {
+      color: #fff; }
 
 .copyright {
   padding: 25px 0;
@@ -6032,9 +6045,20 @@ img {
     text-decoration: underline; }
 
 .map {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 90px;
   background-color: #333; }
+  .map #google-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px; }
+  .map .container {
+    z-index: 1; }
   .map-info {
     max-width: 360px;
     background-color: #fff;
@@ -6115,6 +6139,8 @@ img {
   .form-field {
     padding: 10px;
     font-size: 14px; }
+  .service-price-column {
+    float: left; }
   .stage-column {
     text-align: left;
     padding: 0 0 0 55px; }
@@ -6150,6 +6176,14 @@ img {
     width: 35px;
     height: 35px;
     line-height: 35px; }
+  .map {
+    padding: 20px 0 0; }
+    .map-info {
+      padding: 20px;
+      max-width: 100%;
+      margin-bottom: 20px; }
+    .map #google-map {
+      position: relative; }
   .btn-sticky {
     padding-top: 7px;
     padding-bottom: 7px;
