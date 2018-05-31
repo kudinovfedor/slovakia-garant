@@ -4833,7 +4833,7 @@ hr.style-four {
     width: 0;
     height: 0; }
   ::-webkit-scrollbar-thumb {
-    background: #7eb1ea;
+    background: #ee1c25;
     border: 0 none #fff;
     border-radius: 0; }
   ::-webkit-scrollbar-thumb:hover {
@@ -4964,14 +4964,14 @@ hr.style-four {
         touch-action: manipulation; }
         .nav .menu-item-close:focus {
           outline: 0;
-          -moz-box-shadow: 0 0 0 4px rgba(25, 158, 199, 0.2);
-          -webkit-box-shadow: 0 0 0 4px rgba(25, 158, 199, 0.2);
-          box-shadow: 0 0 0 4px rgba(25, 158, 199, 0.2); }
+          -moz-box-shadow: 0 0 0 4px rgba(238, 28, 37, 0.2);
+          -webkit-box-shadow: 0 0 0 4px rgba(238, 28, 37, 0.2);
+          box-shadow: 0 0 0 4px rgba(238, 28, 37, 0.2); }
         .nav .menu-item-close::before, .nav .menu-item-close::after {
           content: '';
           width: 100%;
           height: 2px;
-          background-color: #199ec7;
+          background-color: #ee1c25;
           position: absolute;
           top: 0;
           right: 0;
@@ -5151,7 +5151,7 @@ hr.style-four {
     width: 100%;
     height: 100%;
     margin: 0;
-    z-index: 100;
+    z-index: 101;
     overflow: auto;
     background-color: #333;
     will-change: transform;
@@ -6194,6 +6194,8 @@ img {
 @media only screen and (max-width: 544px) {
   .header .logo {
     display: none; }
+  .hero {
+    background-image: none !important; }
   .on-mobile-show {
     display: block; } }
 

@@ -160,7 +160,7 @@
         </div>
     </header>
 
-    <div class="page-wrapper <?php echo ! (is_front_page() || is_home()) ? 'container' : ''; ?>">
+    <div class="page-wrapper <?php echo ! is_front_page() ? 'container' : ''; ?>">
 
         <div class="nav-mobile-header">
             <button class="hamburger js-hamburger" type="button" tabindex="0">
