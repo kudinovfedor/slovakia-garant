@@ -38,3 +38,14 @@ if ( ! function_exists('dump')) {
         echo '</pre>';
     }
 }
+
+if (function_exists('pll_register_string')) {
+    function bw_pll_register_string()
+    {
+        $background = ot_get_option('hero_background');
+        $string = isset($background['background-image']) ? $background['background-image'] : 'hero_background_url';
+        pll_register_string('Hero Background', $string, 'Option Three');
+    }
+
+    add_action('after_setup_theme', 'bw_pll_register_string');
+}

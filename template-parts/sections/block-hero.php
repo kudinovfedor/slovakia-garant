@@ -8,9 +8,11 @@
         'bg'      => ot_get_option('hero_background', array('background-image' => $default_bg)),
     );
 
-    if ($hero['display'] === 'on') { ?>
+    if ($hero['display'] === 'on') {
+        $bg = function_exists('pll__') ? pll__($hero['bg']['background-image']) : $hero['bg']['background-image'];
+        ?>
         <!-- Hero Block -->
-        <div class="hero" style="background-image: url('<?php echo esc_url($hero['bg']['background-image']); ?>');">
+        <div class="hero" style="background-image: url('<?php echo esc_url($bg); ?>');">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
