@@ -7,7 +7,7 @@ Author URI: http://brainworks.com.ua
 Description:
 License:
 License URI:
-Version: 1.0.0
+Version: 19.12.2018
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
 /* CORE */
@@ -23,12 +23,12 @@ Tags: one-column, two-columns, full-width-template, e-commerce
 /* PLUG-INs */
 //@import "plugins/font-awesome";
 @import "plugins/font-awesome-5";
-//@import "plugins/plug-ins";
+@import "plugins/plug-ins";
 @import "plugins/animations";
 /* BOOTSTRAP */
 @import "bootstrap/bootstrap-grid";
 @import "bootstrap/bootstrap-tables";
-//@import "bootstrap/bootstrap-embded";
+@import "bootstrap/bootstrap-embded";
 /* PAGES */
 @import "pages/single-post";
 @import "pages/blog-page";
@@ -47,7 +47,7 @@ Tags: one-column, two-columns, full-width-template, e-commerce
 @import "elements/lists";
 @import "elements/empty-space";
 @import "elements/dividers";
-//@import "elements/other";
+@import "elements/other";
 @import "elements/icons";
 @import "elements/custom-scrollbar";
 /* BLOCKS */
@@ -295,11 +295,15 @@ img {
         margin-bottom: 35px;
     }
 
-    &-title {
+    &-title, 
+    &-title a {
         color: #003980;
-        line-height: (20/18);
+        line-height: 1.4;
         font-size: 18px;
         font-weight: 900;
+    }
+    
+    &-title {
         margin-bottom: 15px;
     }
 
@@ -482,11 +486,12 @@ img {
     }
 
     p span,
-    &-title {
+    &-title a{
         @include responsive-font-size(18px, 25px, 480px, 1200px, 22px);
         font-weight: bold;
         line-height: (30/25);
         color: #003980;
+        display: block;
     }
 
     &-title {

@@ -16,16 +16,16 @@
             <div class="row">
                 <div class="col col-sm-6 col-md-5">&copy; 2018, &laquo;SlovakiaGarant&raquo;</div>
                 <div class="col col-sm-6 col-md-7"><?php _e('Developed by', 'brainworks') ?>
-                    <a href="https://brainworks.com.ua/" target="_blank">BRAIN WORKS</a>
+                    <a href="https://brainworks.pro/" target="_blank">BRAIN WORKS</a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
-<button class="btn-sticky on-mobile-hide <?php echo get_lang_class('js-stock'); ?>" type="button">
+<a href="https://slovakiagarant.com/aktsiya/" class="btn-sticky on-mobile-hide <?php echo get_lang_class('js-stock'); ?>" type="button">
     <?php _e('STOCK! -10% for all prices', 'brainworks'); ?>
-</button>
+</a>
 
 </div><!-- .wrapper end-->
 

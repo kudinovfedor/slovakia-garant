@@ -28,7 +28,7 @@
                                         <img src="<?php echo esc_attr(esc_url($item['src'])); ?>" alt="">
                                     </div>
                                     <div class="col-md-6 service-price-column">
-                                        <h3 class="service-price-title"><?php echo esc_html($item['title']); ?></h3>
+                                        <h3 class="service-price-title"><?php echo $item['title']; ?></h3>
                                         <?php echo $item['desc']; ?>
                                     </div>
                                 </div>

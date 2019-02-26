@@ -44,7 +44,7 @@
                             <?php if ($skype) { ?>
                                 <a class="header-skype" href="tel:<?php echo $skype; ?>">
                                     <span class="header-icon"><i class="fab fa-skype" aria-hidden="true"></i></span>
-                                    <?php _e('SlovakiaGarant', 'brainworks'); ?>
+                                    <?php _e('Slovakia Garant', 'brainworks'); ?>
                                 </a>
                             <?php } ?>
                         </div>
@@ -79,13 +79,12 @@
                                 </ul>
                             <?php } ?>
                             <?php if (has_phones()) { ?>
+                                <span class="header-icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
                                 <ul class="phone header-phone">
                                     <?php foreach (get_phones() as $phone) { ?>
                                         <li class="phone-item">
                                             <a href="tel:<?php echo esc_attr(get_phone_number($phone)); ?>"
                                                class="phone-number">
-                                                <span class="header-icon"><i class="fas fa-phone"
-                                                                             aria-hidden="true"></i></span>
                                                 <?php echo esc_html($phone); ?>
                                             </a>
                                         </li>

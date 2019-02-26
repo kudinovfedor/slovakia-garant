@@ -1,8 +1,8 @@
 //BRAND
-$themeColorOne: #4b4b4b; // header, menu, footer, title, 
-$themeColorTwo: #0027ff; // menu active item, button, footer link hover,
-$themeColorThree: #00ff0a; //preHeader bg,
-$themeColorFour: #f00; //menu hover item, table border, preHeader font
+$themeColorOne: #151921; // header, menu, footer, title, 
+$themeColorTwo: #ee1c25; // menu active item, button, footer link hover,
+$themeColorThree: #ee1c25; //preHeader bg,
+$themeColorFour: #003980; //menu hover item, table border, preHeader font
 
 //SELECTION
 $selectionBgColor: #338fff;
@@ -56,9 +56,9 @@ $buttonOutlinedSecondColor: #fff;
 
 //TABLE
 $tableBgColor: $themeColorTwo;
-$tableBgColorActive: lighten($themeColorTwo, 10%);
-$tableBorderColor: #fff;
-$tableBorderColorActive: #989898;
+$tableBgColorActive: lighten($themeColorFour, 70%);
+$tableBorderColor: lighten($themeColorFour, 50%);
+$tableBorderColorActive: $themeColorFour;
 $tableOddBgColor: $themeColorOne;
 $tableOddFontColor: #fff;
 $tableEvenBgColor: $themeColorTwo;
@@ -68,19 +68,19 @@ $tableEvenFontColor: #fff;
 $textMutedColor: #aaa;
 
 //Icons
-$iconColor: $themeColorOne;
-$iconColorActive: $themeColorTwo;
-$iconColorReversed: $themeColorThree;
+$iconColor: #fff;
+$iconColorActive: #fff;
+$iconColorReversed: #fff;
 
 //FORM
-$formBgColor: lighten($themeColorOne, 60%);
+$formBgColor: $themeColorOne;
 
 //FORM Field
 $formFieldBorderWidth: 1px;
-$formFieldBorderColor: lighten($themeColorOne, 30%);
-$formFieldPadding: 7px 8px;
+$formFieldBorderColor: lighten($themeColorOne, 70%);
+$formFieldPadding: 10px 8px;
 $formFieldTextColor: #000;
-$formFieldTextSize: 13px;
+$formFieldTextSize: 16px;
 $formFieldBorderRadius: $borderRadius;
 $formFieldBackgroundColor: #fff;
 

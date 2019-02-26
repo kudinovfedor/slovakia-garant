@@ -29,13 +29,13 @@
                                 } ?>
                                 <section class="service-item">
                                     <?php if ( ! empty($item['title'])) { ?>
-                                        <h3 class="service-title"><?php echo esc_html($item['title']); ?></h3>
+                                        <h3 class="service-title"><?php echo $item['title']; ?></h3>
                                     <?php }
                                     if ( ! empty(trim($item['desc']))) { ?>
                                         <p class="service-desc"><?php echo esc_html($item['desc']); ?></p>
                                     <?php }
                                     if ( ! empty($item['list'])) { ?>
-                                        <div class="service-desc"><?php echo strip_tags($item['list'], '<ul><li>'); ?></div>
+                                        <div class="service-desc"><?php echo strip_tags($item['list'], '<ul><li><a>'); ?></div>
                                     <?php } ?>
                                 </section>
                             <?php } ?>
@@ -63,13 +63,13 @@
                                 } ?>
                                 <section class="service-item">
                                     <?php if ( ! empty($item['title'])) { ?>
-                                        <h3 class="service-title"><?php echo esc_html($item['title']); ?></h3>
+                                        <h3 class="service-title"><?php echo $item['title']; ?></h3>
                                     <?php }
                                     if ( ! empty(trim($item['desc']))) { ?>
-                                        <p class="service-desc"><?php echo esc_html($item['desc']); ?></p>
+                                        <p class="service-desc"><?php echo $item['desc']; ?></p>
                                     <?php }
                                     if ( ! empty($item['list'])) { ?>
-                                        <div class="service-desc"><?php echo strip_tags($item['list'], '<ul><li>'); ?></div>
+                                        <div class="service-desc"><?php echo strip_tags($item['list'], '<ul><li><a>'); ?></div>
                                     <?php } ?>
                                 </section>
                             <?php } ?>

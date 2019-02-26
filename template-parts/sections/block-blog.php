@@ -48,6 +48,10 @@ if ($query->have_posts() && $displayed) { ?>
                         <h3 class="blog-title">
                             <a href="<?php the_permalink(); ?>" class="blog-permalink"><?php the_title(); ?></a>
                         </h3>
+                        <p class="text-muted">
+                            <?php the_time( get_option( 'date_format' ) ); ?>
+                        </p>
+                        <div class="sp-xs-1 sp-sm-1 sp-md-1 sp-lg-1 sp-xl-1"></div>
                         <div class="blog-desc"><?php the_excerpt(); ?></div>
                         <a href="<?php the_permalink(); ?>" class="blog-link"><?php _e('Read more',
                                 'brainworks'); ?></a>
