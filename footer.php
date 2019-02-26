@@ -14,7 +14,7 @@
     <div class="copyright">
         <div class="container">
             <div class="row">
-                <div class="col col-sm-6 col-md-5">&copy; 2018, &laquo;SlovakiaGarant&raquo;</div>
+                <div class="col col-sm-6 col-md-5">&copy; 2017-<?php echo date('Y') ?>, &laquo;SlovakiaGarant s.r.o.&raquo;</div>
                 <div class="col col-sm-6 col-md-7"><?php _e('Developed by', 'brainworks') ?>
                     <a href="https://brainworks.pro/" target="_blank">BRAIN WORKS</a>
                 </div>

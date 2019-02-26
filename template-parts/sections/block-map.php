@@ -17,12 +17,12 @@
                         <li>
                             <?php if (has_phones()) { ?>
                                 <ul class="phone">
-                                    <?php foreach (get_phones() as $phone) { ?>
+                                    <?php foreach (get_phones() as $item) { ?>
                                         <li class="phone-item">
-                                            <a href="tel:<?php echo esc_attr(get_phone_number($phone)); ?>"
+                                            <a href="tel:<?php echo esc_attr(get_phone_number($item['phone'])); ?>"
                                                class="phone-number">
                                                 <i class="fas fa-phone" aria-hidden="true"></i>
-                                                <?php echo esc_html($phone); ?>
+                                                <?php echo esc_html($item['phone']); ?>
                                             </a>
                                         </li>
                                     <?php } ?>

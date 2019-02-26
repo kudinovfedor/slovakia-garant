@@ -484,16 +484,40 @@ function bw_customize_register($wp_customize)
         'panel'       => 'bw_theme_options',
     ));
 
-    $wp_customize->add_setting('bw_phone1', array());
-    $wp_customize->add_setting('bw_phone2', array());
-    $wp_customize->add_setting('bw_phone3', array());
-    $wp_customize->add_setting('bw_phone4', array());
+    $languages = [];
+
+    if(function_exists('pll_languages_list')) {
+        $termsLanguage = get_terms('language', ['hide_empty' => false]);
+
+        foreach ($termsLanguage as $language) {
+            $languages[$language->slug] = $language->name;
+        }
+    }
+
+    $wp_customize->add_setting('bw_phone1', []);
+    $wp_customize->add_setting('bw_phone1_lang', ['default' => 0]);
+    $wp_customize->add_setting('bw_phone2', []);
+    $wp_customize->add_setting('bw_phone2_lang', ['default' => 0]);
+    $wp_customize->add_setting('bw_phone3', []);
+    $wp_customize->add_setting('bw_phone3_lang', ['default' => 0]);
+    $wp_customize->add_setting('bw_phone4', []);
+    $wp_customize->add_setting('bw_phone4_lang', ['default' => 0]);
 
     $wp_customize->add_control('bw_phone1', array(
         'label'    => __('Phone №1', 'brainworks'),
         'section'  => 'bw_phones',
         'settings' => 'bw_phone1',
         'type'     => 'tel',
+    ));
+
+    $wp_customize->add_control('bw_phone1_lang', array(
+        'label'    => 'Language',
+        'section'  => 'bw_phones',
+        'settings' => 'bw_phone1_lang',
+        'type'     => 'select',
+        'choices'  => array_merge([
+            0 => 'All languages'
+        ], $languages),
     ));
 
     $wp_customize->add_control('bw_phone2', array(
@@ -503,6 +527,16 @@ function bw_customize_register($wp_customize)
         'type'     => 'tel',
     ));
 
+    $wp_customize->add_control('bw_phone2_lang', array(
+        'label'    => 'Language',
+        'section'  => 'bw_phones',
+        'settings' => 'bw_phone2_lang',
+        'type'     => 'select',
+        'choices'  => array_merge([
+            0 => 'All languages'
+        ], $languages),
+    ));
+
     $wp_customize->add_control('bw_phone3', array(
         'label'    => __('Phone №3', 'brainworks'),
         'section'  => 'bw_phones',
@@ -510,11 +544,31 @@ function bw_customize_register($wp_customize)
         'type'     => 'tel',
     ));
 
+    $wp_customize->add_control('bw_phone3_lang', array(
+        'label'    => 'Language',
+        'section'  => 'bw_phones',
+        'settings' => 'bw_phone3_lang',
+        'type'     => 'select',
+        'choices'  => array_merge([
+            0 => 'All languages'
+        ], $languages),
+    ));
+
     $wp_customize->add_control('bw_phone4', array(
         'label'    => __('Phone №4', 'brainworks'),
         'section'  => 'bw_phones',
         'settings' => 'bw_phone4',
         'type'     => 'tel',
+    ));
+
+    $wp_customize->add_control('bw_phone4_lang', array(
+        'label'    => 'Language',
+        'section'  => 'bw_phones',
+        'settings' => 'bw_phone4_lang',
+        'type'     => 'select',
+        'choices'  => array_merge([
+            0 => 'All languages'
+        ], $languages),
     ));
 
 }

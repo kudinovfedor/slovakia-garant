@@ -237,14 +237,28 @@ if ( ! function_exists('get_phones')) {
     function get_phones()
     {
         $_phones = [
-            get_theme_mod('bw_phone1'),
-            get_theme_mod('bw_phone2'),
-            get_theme_mod('bw_phone3'),
-            get_theme_mod('bw_phone4'),
+            [
+                'phone' => get_theme_mod('bw_phone1'),
+                'lang' => get_theme_mod('bw_phone1_lang', 0),
+            ],
+            [
+                'phone' => get_theme_mod('bw_phone2'),
+                'lang' => get_theme_mod('bw_phone2_lang', 0),
+            ],
+            [
+                'phone' => get_theme_mod('bw_phone3'),
+                'lang' => get_theme_mod('bw_phone3_lang', 0),
+            ],
+            [
+                'phone' => get_theme_mod('bw_phone4'),
+                'lang' => get_theme_mod('bw_phone4_lang', 0),
+            ],
         ];
 
-        $phones = array_filter($_phones, function ($value) {
-            return ! empty($value);
+        $currentLanguage = function_exists('pll_current_language') ? pll_current_language('slug') : 0;
+
+        $phones = array_filter($_phones, function ($value) use ($currentLanguage) {
+            return !empty($value['phone']) && ($value['lang'] === $currentLanguage || $value['lang'] === 0);
         });
 
         return $phones;

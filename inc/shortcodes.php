@@ -109,13 +109,13 @@ if ( ! function_exists('bw_phone_shortcode')) {
         if (has_phones()) {
             $items = '';
 
-            foreach (get_phones() as $phone) {
+            foreach (get_phones() as $item) {
                 $items .= sprintf(
                     '<li class="phone-item">%s</li>',
                     sprintf(
-                        '<a class="phone-number" href="tel:%s"></a>',
-                        esc_attr(get_phone_number($phone)),
-                        esc_html($phone)
+                        '<a class="phone-number" href="tel:%s">%s</a>',
+                        esc_attr(get_phone_number($item['phone'])),
+                        esc_html($item['phone'])
                     )
                 );
             }
