@@ -37,7 +37,7 @@
                         <div class="header-item">
                             <?php if ($email) { ?>
                                 <a class="header-email" href="mailto:<?php echo $email; ?>">
-                                    <span class="header-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                                    <?php /* <span class="header-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span> */ ?>
                                     <?php echo $email; ?>
                                 </a>
                             <?php } ?>
