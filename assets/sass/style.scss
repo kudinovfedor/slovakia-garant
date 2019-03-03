@@ -799,7 +799,6 @@ img {
     cursor: pointer;
     position: fixed;
     top: 50%;
-    right: 0;
     z-index: 100;
     border: 0;
     display: inline-block;
@@ -809,12 +808,22 @@ img {
     font-weight: 400;
     line-height: (24/16);
     background-color: #ee1c25;
-    @include transform(rotate(90deg) translateX(50%));
-    @include transform-origin(right, top);
     @extend %smooth_animation;
 
     &:hover {
         background-color: lighten(#ee1c25, 3%);
+    }
+
+    &-left {
+        left: 0;
+        @include transform(rotate(-90deg) translateX(-50%));
+        @include transform-origin(left, top);
+    }
+
+    &-right {
+        right: 0;
+        @include transform(rotate(90deg) translateX(50%));
+        @include transform-origin(right, top);
     }
 }
 

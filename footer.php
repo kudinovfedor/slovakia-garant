@@ -23,7 +23,11 @@
     </div>
 </footer>
 
-<a href="https://slovakiagarant.com/aktsiya/" class="btn-sticky on-mobile-hide <?php echo get_lang_class('js-stock'); ?>" type="button">
+<a class="btn-sticky btn-sticky-left on-mobile-hide <?php echo get_lang_class('js-stock'); ?>" href="https://slovakiagarant.com/aktsiya/" type="button">
+	<?php _e('Hot jobs in Slovakia!', 'brainworks'); ?>
+</a>
+
+<a class="btn-sticky btn-sticky-right on-mobile-hide <?php echo get_lang_class('js-stock'); ?>" href="https://slovakiagarant.com/aktsiya/" type="button">
     <?php _e('STOCK! -10% for all prices', 'brainworks'); ?>
 </a>
 
