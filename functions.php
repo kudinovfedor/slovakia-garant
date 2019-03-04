@@ -45,7 +45,14 @@ if (function_exists('pll_register_string')) {
         $background = ot_get_option('hero_background');
         $string = isset($background['background-image']) ? $background['background-image'] : 'hero_background_url';
         pll_register_string('Hero Background', $string, 'Option Three');
+
+        // Callback
+        pll_register_string('Callback title', ot_get_option('callback_title'), 'Option Three');
+        pll_register_string('Callback desc', ot_get_option('callback_desc'), 'Option Three');
+        pll_register_string('Callback form', ot_get_option('callback_form'), 'Option Three');
     }
 
     add_action('after_setup_theme', 'bw_pll_register_string');
 }
+
+

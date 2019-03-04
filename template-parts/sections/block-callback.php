@@ -1,9 +1,9 @@
 <?php if (function_exists('ot_get_option')) {
     $callback = array(
         'display' => ot_get_option('callback_display'),
-        'title'   => ot_get_option('callback_title'),
-        'desc'    => ot_get_option('callback_desc'),
-        'form'    => ot_get_option('callback_form'),
+        'title'   => pll__(ot_get_option('callback_title')),
+        'desc'    => pll__(ot_get_option('callback_desc')),
+        'form'    => pll__(ot_get_option('callback_form')),
     );
 
     if ($callback['display'] === 'on') { ?>
@@ -21,7 +21,8 @@
                 <div class="section-form">
                     <?php if ( ! empty($callback['form'])) {
                         echo do_shortcode(trim(strip_tags($callback['form'])));
-                    } else { ?>
+                    } ?>
+                    <?php /*
                         <form action="#" method="post" class="form">
                             <div class="row">
                                 <div class="col-md-4 form-row">
@@ -43,7 +44,7 @@
                                 <button class="button-medium" type="submit"><?php _e('Order a call', 'brainworks'); ?></button>
                             </div>
                         </form>
-                    <?php } ?>
+                    <?php */ ?>
                 </div>
             </div>
         </div>
