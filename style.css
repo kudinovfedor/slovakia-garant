@@ -6037,12 +6037,12 @@ img {
 .review-container {
   position: relative;
   z-index: 1;
-  padding: 34px 95px 34px 32px;
+  padding: 30px;
   background-color: #f3f5f9;
   margin-bottom: 30px; }
 
 .review-item {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 
 .review-avatar {
   width: 160px;

@@ -609,7 +609,8 @@ img {
     &-container {
         position: relative;
         z-index: 1;
-        padding: 34px 95px 34px 32px;
+        //padding: 34px 95px 34px 32px;
+        padding: 30px;
         background-color: #f3f5f9;
         margin-bottom: 30px;
     }
@@ -620,7 +621,8 @@ img {
 
     &-item {
         @extend %clearfix;
-        margin-bottom: 30px;
+        //margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     &-avatar {

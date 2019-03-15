@@ -31,6 +31,9 @@
             reviews.slick({
                 prevArrow: '.review-btn-prev',
                 nextArrow: '.review-btn-next',
+                slidesToShow: 1,
+                fade: true,
+                cssEase: 'linear',
             });
         }
 

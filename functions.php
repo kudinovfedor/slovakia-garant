@@ -39,7 +39,7 @@ if ( ! function_exists('dump')) {
     }
 }
 
-if (function_exists('pll_register_string')) {
+if (function_exists('pll_register_string') && function_exists('ot_get_option')) {
     function bw_pll_register_string()
     {
         $background = ot_get_option('hero_background');

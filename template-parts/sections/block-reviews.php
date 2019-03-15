@@ -42,6 +42,7 @@ if ($query->have_posts() && $displayed) : ?>
                     <div class="review-list js-reviews">
                         <?php while ($query->have_posts()) : $query->the_post(); ?>
                             <div class="review-item">
+                                <?php /*
                                 <?php if (has_post_thumbnail()) { ?>
                                     <div class="review-avatar">
                                         <?php the_post_thumbnail('thumbnail'); ?>
@@ -57,6 +58,10 @@ if ($query->have_posts() && $displayed) : ?>
                                     <?php } ?>
                                     <div class="review-desc"><?php the_excerpt(); ?></div>
                                 </div>
+                                */ ?>
+                                <?php if (has_post_thumbnail()) {
+                                    the_post_thumbnail('full');
+                                } ?>
                             </div>
                         <?php endwhile; ?>
                     </div>
@@ -69,13 +74,15 @@ if ($query->have_posts() && $displayed) : ?>
                         </button>
                     </div>
                 </div>
+                <?php /*
                 <svg class="svg-icon review-quote" width="90" height="75" fill="#fff">
-                    <use xlink:href="#quote"></use>
+                    <use href="#quote"></use>
                 </svg>
                 <div class="text-right">
                     <a href="<?php echo get_post_type_archive_link('reviews'); ?>"
                        class="button-medium button-outline"><?php _e('See all reviews', 'brainworks'); ?></a>
                 </div>
+                */ ?>
             </div>
         </div>
     </div>
