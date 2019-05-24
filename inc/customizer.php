@@ -76,6 +76,7 @@ function bw_customize_register($wp_customize)
     $wp_customize->add_setting('bw_scroll_top_border_width', array(
         'default'   => '1',
         'transport' => 'postMessage',
+        'sanitize_callback' => 'is_string',
     ));
 
     $wp_customize->add_setting('bw_scroll_top_border_color', array(
@@ -162,6 +163,7 @@ function bw_customize_register($wp_customize)
         'section'  => 'bw_scroll_top',
         'settings' => 'bw_scroll_top_border_width',
         'type'     => 'number',
+        'input_attrs' => array('min' => 0, 'step' => 1),
     ));
 
     $wp_customize->add_control('bw_scroll_top_border_color', array(
@@ -603,12 +605,12 @@ function bw_customizer_css()
 { ?>
     <style type="text/css">
         .scroll-top {
-            width: <?php theme_mod('bw_scroll_top_width', 55); ?>px;
-            height: <?php theme_mod('bw_scroll_top_height', 55); ?>px;
+            width: <?php theme_mod('bw_scroll_top_width', '55'); ?>px;
+            height: <?php theme_mod('bw_scroll_top_height', '55'); ?>px;
             background-color: <?php theme_mod('bw_scroll_top_background_color', '#000000'); ?>;
-            border-width: <?php theme_mod('bw_scroll_top_border_width', 1); ?>px;
+            border-width: <?php theme_mod('bw_scroll_top_border_width', '1'); ?>px;
             border-color: <?php theme_mod('bw_scroll_top_border_color', '#000000'); ?>;
-            bottom: <?php theme_mod('bw_scroll_top_offset_bottom', 20); ?>px;
+            bottom: <?php theme_mod('bw_scroll_top_offset_bottom', '20'); ?>px;
         <?php bw_scroll_top_position_offset(); ?>
         }
 
@@ -628,7 +630,7 @@ add_action('wp_head', 'bw_customizer_css');
 function bw_scroll_top_position_offset()
 {
     $position = get_theme_mod('bw_scroll_top_position', 'right');
-    $offset   = get_theme_mod('bw_scroll_top_offset_left_right', 20);
+    $offset   = get_theme_mod('bw_scroll_top_offset_left_right', '20');
 
     $output = sprintf('%s: %spx;', $position, $offset);
 

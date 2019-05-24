@@ -1,30 +1,30 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: slovakia-garant-v1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-12 08:53+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: 2018-06-01 07:25+0000\n"
+"PO-Revision-Date: 2019-03-03 13:00+0000\n"
+"Last-Translator: Web Developer <brothersrabbits@mail.ru>\n"
+"Language-Team: English (UK)\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.3"
 
 #: search.php:6
 msgid "Search Results for"
 msgstr ""
 
-#: archive-reviews.php:37 loops/content-2.php:45 loops/content-blog-2.php:41
+#: archive-reviews.php:31 loops/content-2.php:49 loops/content-blog-2.php:41
 #: loops/content.php:47 loops/content-blog-1-sbl.php:45
 #: loops/content-blog-3.php:42 loops/content-blog-1-sbr.php:45
 msgid "Previous"
 msgstr ""
 
-#: archive-reviews.php:39 loops/content-2.php:46 loops/content-blog-2.php:42
+#: archive-reviews.php:33 loops/content-2.php:50 loops/content-blog-2.php:42
 #: loops/content.php:48 loops/content-blog-1-sbl.php:46
 #: loops/content-blog-3.php:43 loops/content-blog-1-sbr.php:46
 msgid "Next"
@@ -50,13 +50,13 @@ msgstr ""
 msgid "Sidebar Left"
 msgstr ""
 
-#: category.php:7 loops/content-blog-2.php:25 loops/content-blog-1-sbl.php:29
+#: category.php:6 loops/content-blog-2.php:25 loops/content-blog-1-sbl.php:29
 #: loops/content-blog-3.php:26 loops/content-blog-1-sbr.php:26
 msgid "Category"
 msgstr ""
 
 #: header.php:47
-msgid "Slovakia Garant"
+msgid "SlovakiaGarant"
 msgstr ""
 
 #: header.php:59
@@ -71,11 +71,11 @@ msgstr ""
 msgid "Telegram"
 msgstr ""
 
-#: header.php:110
+#: header.php:111
 msgid "Call back"
 msgstr ""
 
-#: header.php:154 searchform.php:2
+#: header.php:155 searchform.php:2
 msgid "Search"
 msgstr ""
 
@@ -107,28 +107,24 @@ msgstr ""
 msgid "Developed by"
 msgstr ""
 
-#: footer.php:31
-msgid "Hot jobs in Slovakia!"
-msgstr ""
-
-#: footer.php:39
+#: footer.php:27
 #, php-format
 msgid "STOCK! -10% for all prices"
-msgstr ""
+msgstr "PROMOTION! -10% discount on all services"
 
-#: footer.php:48
+#: footer.php:36
 msgid "Edit Scroll Top"
 msgstr ""
 
-#: footer.php:51
+#: footer.php:39
 msgid "Edit Analytics Tracking Code"
 msgstr ""
 
-#: footer.php:54
+#: footer.php:42
 msgid "Edit Login Logo"
 msgstr ""
 
-#: loops/content-2.php:30
+#: loops/content-2.php:34
 msgid "Continue reading"
 msgstr ""
 
@@ -174,6 +170,7 @@ msgid "Log out"
 msgstr ""
 
 #: loops/comments.php:63 loops/comments.php:66
+#: template-parts/sections/block-callback.php:28
 msgid "Your name"
 msgstr ""
 
@@ -420,19 +417,19 @@ msgstr ""
 msgid "Customizer Custom Phone numbers"
 msgstr ""
 
-#: inc/customizer.php:507
+#: inc/customizer.php:493
 msgid "Phone №1"
 msgstr ""
 
-#: inc/customizer.php:524
+#: inc/customizer.php:500
 msgid "Phone №2"
 msgstr ""
 
-#: inc/customizer.php:541
+#: inc/customizer.php:507
 msgid "Phone №3"
 msgstr ""
 
-#: inc/customizer.php:558
+#: inc/customizer.php:514
 msgid "Phone №4"
 msgstr ""
 
@@ -591,19 +588,35 @@ msgstr ""
 msgid "Service Hexagon"
 msgstr ""
 
-#: template-parts/sections/block-blog.php:56
+#: template-parts/sections/block-blog.php:52
 msgid "Read more"
 msgstr ""
 
-#: template-parts/sections/block-blog.php:62
+#: template-parts/sections/block-blog.php:58
 msgid "View all articles"
 msgstr ""
 
-#: template-parts/sections/block-hero.php:26
+#: template-parts/sections/block-callback.php:31
+msgid "Your e-mail"
+msgstr ""
+
+#: template-parts/sections/block-callback.php:34
+msgid "Your phone number"
+msgstr ""
+
+#: template-parts/sections/block-callback.php:39
+msgid "Briefly describe what kind of service you are interested in"
+msgstr ""
+
+#: template-parts/sections/block-callback.php:43
+msgid "Order a call"
+msgstr ""
+
+#: template-parts/sections/block-hero.php:24
 msgid "Free consultation"
 msgstr ""
 
-#: template-parts/sections/block-reviews.php:84
+#: template-parts/sections/block-reviews.php:77
 msgid "See all reviews"
 msgstr ""
 

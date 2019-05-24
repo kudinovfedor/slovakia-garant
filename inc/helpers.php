@@ -239,19 +239,19 @@ if ( ! function_exists('get_phones')) {
         $_phones = [
             [
                 'phone' => get_theme_mod('bw_phone1'),
-                'lang' => get_theme_mod('bw_phone1_lang', 0),
+                'lang' => get_theme_mod('bw_phone1_lang', '0'),
             ],
             [
                 'phone' => get_theme_mod('bw_phone2'),
-                'lang' => get_theme_mod('bw_phone2_lang', 0),
+                'lang' => get_theme_mod('bw_phone2_lang', '0'),
             ],
             [
                 'phone' => get_theme_mod('bw_phone3'),
-                'lang' => get_theme_mod('bw_phone3_lang', 0),
+                'lang' => get_theme_mod('bw_phone3_lang', '0'),
             ],
             [
                 'phone' => get_theme_mod('bw_phone4'),
-                'lang' => get_theme_mod('bw_phone4_lang', 0),
+                'lang' => get_theme_mod('bw_phone4_lang', '0'),
             ],
         ];
 
@@ -330,12 +330,12 @@ if ( ! function_exists('get_default_logo_link')) {
             $file = get_template_directory_uri() . '/assets/img/logo.png';
 
             if($use_svg) {
-                $img = sprintf('<svg class="svg-icon" width="135" height="89" aria-label="%s"><use xlink:href="#logo"></use></svg>', get_bloginfo('name'));
+                $img = sprintf('<svg class="svg-icon" width="135" height="89"><use xlink:href="#logo"></use></svg>');
             } else {
                 $img = sprintf('<img class="logo-img" src="%s" alt="%s">', esc_url($file), get_bloginfo('name'));
             }
 
-            $link = sprintf('<a class="logo-link" href="%s">%s</a>', esc_url(home_url('/')), $img);
+            $link = sprintf('<a class="logo-link" href="%s" aria-label="%s">%s</a>', esc_url(home_url('/')), get_bloginfo('name'), $img);
 
             $span = sprintf('<span class="logo-link">%s</span>', $img);
 

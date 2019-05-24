@@ -42,7 +42,7 @@
                                 </a>
                             <?php } ?>
                             <?php if ($skype) { ?>
-                                <a class="header-skype" href="tel:<?php echo $skype; ?>">
+                                <a class="header-skype" href="skype:<?php echo $skype; ?>?call">
                                     <span class="header-icon"><i class="fab fa-skype" aria-hidden="true"></i></span>
                                     <?php _e('Slovakia Garant', 'brainworks'); ?>
                                 </a>
@@ -54,25 +54,22 @@
                                 <ul class="messenger header-messenger">
                                     <?php if ($viber) { ?>
                                         <li class="messenger-item">
-                                            <a href="tel:<?php echo $viber; ?>" class="messenger-link">
-                                                <i class="fab fa-viber" aria-hidden="true"
-                                                   aria-label="<?php _e('Viber', 'brainworks'); ?>"></i>
+                                            <a href="tel:<?php echo $viber; ?>" class="messenger-link" aria-label="<?php _e('Viber', 'brainworks'); ?>">
+                                                <i class="fab fa-viber" aria-hidden="true"></i>
                                             </a>
                                         </li>
                                     <?php } ?>
                                     <?php if ($whatsapp) { ?>
                                         <li class="messenger-item">
-                                            <a href="tel:<?php echo $whatsapp; ?>" class="messenger-link">
-                                                <i class="fab fa-whatsapp" aria-hidden="true"
-                                                   aria-label="<?php _e('WhatsApp', 'brainworks'); ?>"></i>
+                                            <a href="tel:<?php echo $whatsapp; ?>" class="messenger-link" aria-label="<?php _e('WhatsApp', 'brainworks'); ?>">
+                                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
                                             </a>
                                         </li>
                                     <?php } ?>
                                     <?php if ($telegram) { ?>
                                         <li class="messenger-item">
-                                            <a href="tel:<?php echo $telegram; ?>" class="messenger-link">
-                                                <i class="fab fa-telegram-plane" aria-hidden="true"
-                                                   aria-label="<?php _e('Telegram', 'brainworks'); ?>"></i>
+                                            <a href="tel:<?php echo $telegram; ?>" class="messenger-link" aria-label="<?php _e('Telegram', 'brainworks'); ?>">
+                                                <i class="fab fa-telegram-plane" aria-hidden="true"></i>
                                             </a>
                                         </li>
                                     <?php } ?>
@@ -98,9 +95,8 @@
                                     <?php foreach (get_social() as $social) { ?>
                                         <li class="social-item">
                                             <a href="<?php echo esc_attr(esc_url($social['url'])); ?>"
-                                               class="social-link" target="_blank">
-                                                <i class="<?php echo esc_attr($social['icon']); ?>" aria-hidden="true"
-                                                   aria-label="<?php echo esc_attr($social['text']); ?>"></i>
+                                               class="social-link" target="_blank" aria-label="<?php echo esc_attr($social['text']); ?>">
+                                                <i class="<?php echo esc_attr($social['icon']); ?>" aria-hidden="true"></i>
                                             </a>
                                         </li>
                                     <?php } ?>
@@ -184,9 +180,8 @@
         <ul class="social">
             <?php foreach (get_social() as $social) { ?>
                 <li class="social-item">
-                    <a href="<?php echo esc_attr(esc_url($social['url'])); ?>" class="social-link" target="_blank">
-                        <i class="fa <?php echo esc_attr($social['icon']); ?>" aria-hidden="true"
-                           aria-label="<?php echo esc_attr($social['text']); ?>"></i>
+                    <a href="<?php echo esc_attr(esc_url($social['url'])); ?>" class="social-link" target="_blank" aria-label="<?php echo esc_attr($social['text']); ?>">
+                        <i class="fa <?php echo esc_attr($social['icon']); ?>" aria-hidden="true"></i>
                     </a>
                 </li>
             <?php } ?>

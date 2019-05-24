@@ -1,7 +1,7 @@
 <?php
 $args = array(
     'post_type'      => 'reviews',
-    'posts_per_page' => 10,
+    'posts_per_page' => 5,
     'meta_query'     => array(
         'relation' => 'OR',
         array(
@@ -78,11 +78,11 @@ if ($query->have_posts() && $displayed) : ?>
                 <svg class="svg-icon review-quote" width="90" height="75" fill="#fff">
                     <use href="#quote"></use>
                 </svg>
-                <div class="text-right">
+                */ ?>
+                <div class="text-center">
                     <a href="<?php echo get_post_type_archive_link('reviews'); ?>"
                        class="button-medium button-outline"><?php _e('See all reviews', 'brainworks'); ?></a>
                 </div>
-                */ ?>
             </div>
         </div>
     </div>
