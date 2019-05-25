@@ -76,7 +76,6 @@ function bw_customize_register($wp_customize)
     $wp_customize->add_setting('bw_scroll_top_border_width', array(
         'default'   => '1',
         'transport' => 'postMessage',
-        'sanitize_callback' => 'is_string',
     ));
 
     $wp_customize->add_setting('bw_scroll_top_border_color', array(
@@ -112,6 +111,7 @@ function bw_customize_register($wp_customize)
         'section'  => 'bw_scroll_top',
         'settings' => 'bw_scroll_top_width',
         'type'     => 'number',
+        'input_attrs' => array('min' => 25, 'step' => 1),
     ));
 
     $wp_customize->add_control('bw_scroll_top_height', array(
@@ -119,6 +119,7 @@ function bw_customize_register($wp_customize)
         'section'  => 'bw_scroll_top',
         'settings' => 'bw_scroll_top_height',
         'type'     => 'number',
+        'input_attrs' => array('min' => 25, 'step' => 1),
     ));
 
     $wp_customize->add_control('bw_scroll_top_shape', array(
@@ -149,6 +150,7 @@ function bw_customize_register($wp_customize)
         'section'  => 'bw_scroll_top',
         'settings' => 'bw_scroll_top_offset_left_right',
         'type'     => 'number',
+        'input_attrs' => array('min' => 0, 'step' => 1),
     ));
 
     $wp_customize->add_control('bw_scroll_top_offset_bottom', array(
@@ -156,6 +158,7 @@ function bw_customize_register($wp_customize)
         'section'  => 'bw_scroll_top',
         'settings' => 'bw_scroll_top_offset_bottom',
         'type'     => 'number',
+        'input_attrs' => array('min' => 0, 'step' => 1),
     ));
 
     $wp_customize->add_control('bw_scroll_top_border_width', array(
@@ -608,7 +611,7 @@ function bw_customizer_css()
             width: <?php theme_mod('bw_scroll_top_width', '55'); ?>px;
             height: <?php theme_mod('bw_scroll_top_height', '55'); ?>px;
             background-color: <?php theme_mod('bw_scroll_top_background_color', '#000000'); ?>;
-            border-width: <?php theme_mod('bw_scroll_top_border_width', '1'); ?>px;
+            border-width: <?php echo get_theme_mod('bw_scroll_top_border_width', '1'); ?>px;
             border-color: <?php theme_mod('bw_scroll_top_border_color', '#000000'); ?>;
             bottom: <?php theme_mod('bw_scroll_top_offset_bottom', '20'); ?>px;
         <?php bw_scroll_top_position_offset(); ?>
