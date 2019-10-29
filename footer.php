@@ -35,9 +35,9 @@
 } else {
 	$pageUrl = get_permalink( get_page_by_path( 'aktsiya' )->ID );
 } ?>
-<a class="btn-sticky btn-sticky-right on-mobile-hide <?php echo get_lang_class('js-stock'); ?>" href="<?php echo $pageUrl; ?>">
+<!--<a class="btn-sticky btn-sticky-right on-mobile-hide <?php echo get_lang_class('js-stock'); ?>" href="<?php echo $pageUrl; ?>">
     <?php _e('STOCK! -10% for all prices', 'brainworks'); ?>
-</a>
+</a>-->
 
 </div><!-- .wrapper end-->
 

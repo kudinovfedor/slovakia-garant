@@ -2,8 +2,17 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="sp-xs-2 sp-sm-2 sp-md-2 sp-lg-2 sp-xl-2"></div>
+        <div class="sp-xs-2"></div>
         <h1 class="col-sm-12 text-center page-name"><?php post_type_archive_title(); ?></h1>
+        <div class="sp-xs-4"></div>
+        
+<p style="text-align: justify;">&nbsp; На этой странице Вы можете найти скриншоты отзывов, которые наши благодарные клиенты оставляют в <a class="link" href="https://www.facebook.com/pg/SlovakiaGarant/reviews/?ref=page_internal" target="_blank" rel="noopener">Facebook</a> и <a class="link" href="http://g.page/SlovakiaGarant/review" target="_blank" rel="noopener">Google</a>.</p>
+<p style="text-align: justify;">&nbsp; Если Вы наш клиент, которому мы предоставили услуги, или мы взаимодействовали любым другим способом, и Вы хотите написать честный отзыв о нашем сотрудничестве — можете это сделать здесь:</p>
+<p style="text-align: justify;"><a class="link" href="https://www.facebook.com/pg/SlovakiaGarant/reviews/?ref=page_internal" target="_blank" rel="noopener">Оставить отзыв на&nbsp;Facebook</a></p>
+<p style="text-align: justify;"><a class="link" href="http://g.page/SlovakiaGarant/review" target="_blank" rel="noopener">Оставить отзыв на&nbsp;Google</a></p>
+<p style="text-align: justify;">&nbsp; Мы очень благодарны за Ваши отзывы и время, которое уделили для него. Для нас это очень важно. Надеемся, что Вы остались довольны нашим сотрудничеством, и мы смогли в полной мере решить поставленную перед нами задачу для Вас.</p>
+        
+        <div class="sp-xs-4"></div>
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
             <?php if (have_posts()): while (have_posts()): the_post(); ?>
                 <div class="review-item">
