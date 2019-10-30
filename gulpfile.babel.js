@@ -22,14 +22,14 @@ gulp.task('svg', () => {
 gulp.task('sass', () => {
     return gulp.src('assets/sass/**/*.scss')
         .pipe(plumber())
-        // .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'nested', // nested, expanded, compact, compressed
             precision: 5,
             sourceComments: false,
             linefeed: 'crlf',
         }).on('error', sass.logError))
-        // .pipe(sourcemaps.write('/'))
+        //.pipe(sourcemaps.write('/'))
         .pipe(gulp.dest('./'));
 });
 
@@ -58,7 +58,7 @@ gulp.task('min', gulp.parallel('css', 'js'));
 
 gulp.task('watch', () => {
     gulp.watch('assets/sass/**/*.scss', gulp.series('sass'));
-    gulp.watch('assets/img/svg/*.svg', gulp.series('svg'));
+    //gulp.watch('assets/img/svg/*.svg', gulp.series('svg'));
 });
 
 gulp.task('default', () => {

@@ -55,4 +55,13 @@ if (function_exists('pll_register_string') && function_exists('ot_get_option')) 
     add_action('after_setup_theme', 'bw_pll_register_string');
 }
 
-
+add_action('after_setup_theme', function () {
+	pll_register_string( 'social-youtube', 'YouTube', 'Social' );
+	pll_register_string( 'social-facebook', 'Facebook', 'Social' );
+	pll_register_string( 'social-vk', 'Vk', 'Social' );
+	pll_register_string( 'social-odnoklassniki', 'Odnoklassniki', 'Social' );
+	pll_register_string( 'social-twitter', 'Twitter', 'Social' );
+	pll_register_string( 'social-linkedin', 'Linkedin', 'Social' );
+	pll_register_string( 'social-instagram', 'Instagram', 'Social' );
+	pll_register_string( 'social-google-plus', 'Google Plus', 'Social' );
+});

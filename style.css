@@ -5017,7 +5017,8 @@ ul.children {
     font-size: 0; }
     .nav .menu-item {
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      margin-bottom: 1px; }
       .nav .menu-item .menu-item-has-children-arrow {
         display: none; }
       .nav .menu-item-close {
@@ -5074,6 +5075,8 @@ ul.children {
           border-color: #000 transparent transparent transparent;
           transition: transform 0.3s ease-in-out; }
       .no-touch .nav .menu-item:hover .menu-link, .nav .menu-item-current .menu-link, .nav .menu-item.current-menu-parent .menu-link, .nav .menu-item.current-menu-ancestor .menu-link {
+        color: #fff;
+        background-color: #003980;
         text-decoration: none; }
       .no-touch .nav .menu-item:hover > .sub-menu {
         top: 100%;

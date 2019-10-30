@@ -20,7 +20,7 @@
                             <div class="hero-title"><?php echo strip_tags($hero['title'], '<br>'); ?></div>
                         <?php } ?>
                         <?php if ( ! empty($hero['desc'])) { ?>
-                            <p class="hero-desc"><?php echo strip_tags($hero['desc'], '<br>'); ?></p>
+                            <div class="hero-desc"><?php echo $hero['desc']; ?></div>
                         <?php } ?>
                         <button class="button-medium hero-btn <?php the_lang_class('js-free-consult'); ?>"
                                 type="button"><?php _e('Free consultation', 'brainworks'); ?></button>

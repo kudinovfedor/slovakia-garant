@@ -169,42 +169,50 @@ if ( ! function_exists('get_social')) {
     {
         $_socials = [
             'youtube'       => [
-                'url'  => get_theme_mod('bw_social_youtube'),
+                //'url'  => get_theme_mod('bw_social_youtube'),
+                'url'  => pll__('YouTube'),
                 'text' => 'YouTube',
                 'icon' => 'fab fa-youtube',
             ],
             'facebook'      => [
-                'url'  => get_theme_mod('bw_social_facebook'),
+                //'url'  => get_theme_mod('bw_social_facebook'),
+                'url'  => pll__('Facebook'),
                 'text' => 'Facebook',
                 'icon' => 'fab fa-facebook-f',
             ],
             'vk'            => [
-                'url'  => get_theme_mod('bw_social_vk'),
+                //'url'  => get_theme_mod('bw_social_vk'),
+                'url'  => pll__('Vk'),
                 'text' => 'Vk',
                 'icon' => 'fab fa-vk',
             ],
             'odnoklassniki' => [
-                'url'  => get_theme_mod('bw_social_odnoklassniki'),
+                //'url'  => get_theme_mod('bw_social_odnoklassniki'),
+                'url'  => pll__('Odnoklassniki'),
                 'text' => 'Odnoklassniki',
                 'icon' => 'fab fa-odnoklassniki',
             ],
             'twitter'       => [
-                'url'  => get_theme_mod('bw_social_twitter'),
+                //'url'  => get_theme_mod('bw_social_twitter'),
+                'url'  => pll__('Twitter'),
                 'text' => 'Twitter',
                 'icon' => 'fab fa-twitter',
             ],
             'linkedin'      => [
-                'url'  => get_theme_mod('bw_social_linkedin'),
+                //'url'  => get_theme_mod('bw_social_linkedin'),
+                'url'  => pll__('Linkedin'),
                 'text' => 'Linkedin',
                 'icon' => 'fab fa-linkedin-in',
             ],
             'instagram'     => [
-                'url'  => get_theme_mod('bw_social_instagram'),
+                //'url'  => get_theme_mod('bw_social_instagram'),
+                'url'  => pll__('Instagram'),
                 'text' => 'Instagram',
                 'icon' => 'fab fa-instagram',
             ],
             'google-plus'   => [
-                'url'  => get_theme_mod('bw_social_google_plus'),
+                //'url'  => get_theme_mod('bw_social_google_plus'),
+                'url'  => pll__('Google Plus'),
                 'text' => 'Google Plus',
                 'icon' => 'fab fa-google-plus-g',
             ],

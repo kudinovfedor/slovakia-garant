@@ -32,9 +32,9 @@ if ($query->have_posts() && $displayed) : ?>
                     <?php if ( ! empty($reviews['title'])) { ?>
                         <h2 class="section-headline"><?php echo esc_html($reviews['title']); ?></h2>
                     <?php } ?>
-                    <?php if ( ! empty($reviews['desc'])) { ?>
+                    <?php /* if ( ! empty($reviews['desc'])) { ?>
                         <p class="section-desc"><?php echo esc_html(strip_tags($reviews['desc'])); ?></p>
-                    <?php } ?>
+                    <?php } */ ?>
                 </header>
             <?php } ?>
             <div class="review-wrapper">

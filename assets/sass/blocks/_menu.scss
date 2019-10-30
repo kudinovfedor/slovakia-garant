@@ -145,6 +145,7 @@
         &-item {
             display: inline-block;
             vertical-align: middle;
+            margin-bottom: 1px;
             //padding: 5px;
 
             .menu-item-has-children-arrow {
@@ -215,6 +216,8 @@
             &.current-menu-parent,
             &.current-menu-ancestor {
                 .menu-link {
+                    color: #fff;
+                    background-color: #003980;
                     text-decoration: none;
                 }
             }
