@@ -24,6 +24,7 @@ require_once locate_template('/inc/shortcodes.php');
 require_once locate_template('/inc/post_type/reviews.php');
 require_once locate_template('/inc/post_type/reviews-metabox.php');
 require_once locate_template('/inc/post_type/post-metabox.php');
+require_once locate_template('/inc/post_type/service-prices.php');
 
 if ( ! function_exists('dump')) {
     /** Dump

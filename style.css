@@ -5064,20 +5064,24 @@ ul.children {
         position: relative;
         padding-right: 15px; }
         .nav .menu-item-has-children:hover::after {
-          top: 14px;
-          transform: scale(-1); }
+          transform: scale(-1);
+          border-top-color: #fff; }
         .nav .menu-item-has-children::after {
           content: "";
           position: absolute;
-          top: 19px;
+          top: 15px;
           right: 5px;
-          border: 5px solid #000;
-          border-color: #000 transparent transparent transparent;
+          border: 5px solid transparent;
+          border-bottom: 0;
+          border-top-color: #000;
           transition: transform 0.3s ease-in-out; }
-      .no-touch .nav .menu-item:hover .menu-link, .nav .menu-item-current .menu-link, .nav .menu-item.current-menu-parent .menu-link, .nav .menu-item.current-menu-ancestor .menu-link {
-        color: #fff;
-        background-color: #003980;
-        text-decoration: none; }
+      .no-touch .nav .menu-item:hover, .nav .menu-item-current, .nav .menu-item.current-menu-parent, .nav .menu-item.current-menu-ancestor {
+        background-color: #003980; }
+        .no-touch .nav .menu-item:hover::after, .nav .menu-item-current::after, .nav .menu-item.current-menu-parent::after, .nav .menu-item.current-menu-ancestor::after {
+          border-top-color: #fff; }
+        .no-touch .nav .menu-item:hover .menu-link, .nav .menu-item-current .menu-link, .nav .menu-item.current-menu-parent .menu-link, .nav .menu-item.current-menu-ancestor .menu-link {
+          color: #fff;
+          text-decoration: none; }
       .no-touch .nav .menu-item:hover > .sub-menu {
         top: 100%;
         visibility: visible;
@@ -5123,7 +5127,8 @@ ul.children {
         border-color: #000 transparent transparent transparent;
         transition: transform 0.3s ease-in-out; }
     .no-touch .nav .sub-menu-item:hover > .sub-menu-link, .nav .sub-menu-item-current > .sub-menu-link {
-      background-color: #f0f0f0; }
+      color: #fff;
+      background-color: #003980; }
     .no-touch .nav .sub-menu-item:hover > .sub-menu {
       display: block;
       visibility: visible;
