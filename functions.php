@@ -57,6 +57,7 @@ if (function_exists('pll_register_string') && function_exists('ot_get_option')) 
 }
 
 add_action('after_setup_theme', function () {
+	pll_register_string( 'skype', 'Skype', 'Messengers' );
 	pll_register_string( 'social-youtube', 'YouTube', 'Social' );
 	pll_register_string( 'social-facebook', 'Facebook', 'Social' );
 	pll_register_string( 'social-vk', 'Vk', 'Social' );

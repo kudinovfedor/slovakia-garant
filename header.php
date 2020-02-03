@@ -29,7 +29,8 @@
                     <div class="header-top">
                         <?php
                         $email    = get_theme_mod('bw_additional_email');
-                        $skype    = get_theme_mod('bw_additional_skype');
+                        $skype    = pll__('Skype');
+                        //$skype    = get_theme_mod('bw_additional_skype');
                         $viber    = get_theme_mod('bw_additional_viber');
                         $whatsapp = get_theme_mod('bw_additional_whatsapp');
                         $telegram = get_theme_mod('bw_additional_telegram');
