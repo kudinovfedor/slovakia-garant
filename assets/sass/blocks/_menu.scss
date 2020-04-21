@@ -145,7 +145,6 @@
         &-item {
             display: inline-block;
             vertical-align: middle;
-            margin-bottom: 1px;
             //padding: 5px;
 
             .menu-item-has-children-arrow {
@@ -194,21 +193,19 @@
             &-has-children {
                 position: relative;
                 padding-right: 15px;
-
                 &:hover {
                     &::after {
+                        top: 14px;
                         transform: scale(-1);
-                        border-top-color: #fff;
                     }
                 }
                 &::after {
                     content: "";
                     position: absolute;
-                    top: 15px;
+                    top: 19px;
                     right: 5px;
-                    border: 5px solid transparent;
-                    border-bottom: 0;
-                    border-top-color: #000;
+                    border: 5px solid #000;
+                    border-color: #000 transparent transparent transparent;
                     transition: transform 0.3s ease-in-out;
                 }
             }
@@ -217,14 +214,7 @@
             &-current,
             &.current-menu-parent,
             &.current-menu-ancestor {
-                background-color: #003980;
-
-                &::after {
-                    border-top-color: #fff;
-                }
-
                 .menu-link {
-                    color: #fff;
                     text-decoration: none;
                 }
             }
@@ -292,8 +282,7 @@
             .no-touch &:hover,
             &-current {
                 > .sub-menu-link {
-                    color: #fff;
-                    background-color: #003980;
+                    background-color: #f0f0f0;
                 }
             }
 

@@ -3,7 +3,7 @@
 function cptui_register_my_cpts_service_prices()
 {
 	/**
-	 * Post Type: Service Prices.
+	 * Post Type: Reviews.
 	 */
 
 	$labels = array(

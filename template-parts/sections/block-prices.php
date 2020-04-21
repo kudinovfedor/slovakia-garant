@@ -56,7 +56,7 @@
 	            <?php } ?>
 
                 <div class="text-center">
-                    <a href="/uslugi/vse-soputstvuyushhie-uslugi/" class="button-medium button-outline">
+                    <a href="<?php echo get_permalink(pll_get_post(48)) ?>" class="button-medium button-outline">
                         <?php _e('See all services', 'brainworks'); ?>
                     </a>
                 </div>

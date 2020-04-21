@@ -40,6 +40,38 @@ if ( ! function_exists('dump')) {
     }
 }
 
+if ( ! function_exists( 'ot_get_option' ) ) {
+
+	/**
+	 * Get Option.
+	 *
+	 * Helper function to return the option value.
+	 * If no value has been saved, it returns $default.
+	 *
+	 * @param  string $option_id The option ID.
+	 * @param  string $default   The default option value.
+	 * @return mixed
+	 *
+	 * @access public
+	 * @since  2.0
+	 */
+	function ot_get_option( $option_id, $default = '' ) {
+
+		// Get the saved options.
+		$options = get_option( ot_options_id() );
+
+		// Look for the saved value.
+		if ( isset( $options[ $option_id ] ) && '' !== $options[ $option_id ] ) {
+
+			return ot_wpml_filter( $options, $option_id );
+
+		}
+
+		return $default;
+
+	}
+}
+
 if (function_exists('pll_register_string') && function_exists('ot_get_option')) {
     function bw_pll_register_string()
     {

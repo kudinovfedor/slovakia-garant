@@ -45,7 +45,7 @@
                             <?php if ($skype) { ?>
                                 <a class="header-skype" href="skype:<?php echo $skype; ?>?call">
                                     <span class="header-icon"><i class="fab fa-skype" aria-hidden="true"></i></span>
-                                    <?php _e('Slovakia Garant', 'brainworks'); ?>
+                                    <?php _e('SlovakiaGarant Eng Support', 'brainworks'); ?>
                                 </a>
                             <?php } ?>
                         </div>

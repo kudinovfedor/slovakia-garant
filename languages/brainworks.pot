@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-12 08:53+0000\n"
+"POT-Creation-Date: 2020-02-03 10:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,93 +14,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: search.php:6
-msgid "Search Results for"
+#: header.php:47
+msgid "SlovakiaGarant Eng Support"
 msgstr ""
 
-#: archive-reviews.php:37 loops/content-2.php:45 loops/content-blog-2.php:41
-#: loops/content.php:47 loops/content-blog-1-sbl.php:45
-#: loops/content-blog-3.php:42 loops/content-blog-1-sbr.php:45
-msgid "Previous"
+#: header.php:57
+msgid "Viber"
 msgstr ""
 
-#: archive-reviews.php:39 loops/content-2.php:46 loops/content-blog-2.php:42
-#: loops/content.php:48 loops/content-blog-1-sbl.php:46
-#: loops/content-blog-3.php:43 loops/content-blog-1-sbr.php:46
-msgid "Next"
+#: header.php:64
+msgid "WhatsApp"
 msgstr ""
 
-#. Name of the template
-msgid "Page Without Breadcrumbs"
+#: header.php:71
+msgid "Telegram"
 msgstr ""
 
-#. Name of the template
-msgid "Home Page"
+#: header.php:106
+msgid "Call back"
 msgstr ""
 
-#. Name of the template
-msgid "Landing"
-msgstr ""
-
-#. Name of the template
-msgid "Sitemap Page"
+#: header.php:150 searchform.php:2
+msgid "Search"
 msgstr ""
 
 #. Name of the template
 msgid "Sidebar Left"
 msgstr ""
 
-#: category.php:7 loops/content-blog-2.php:25 loops/content-blog-1-sbl.php:29
-#: loops/content-blog-3.php:26 loops/content-blog-1-sbr.php:26
-msgid "Category"
-msgstr ""
-
-#: header.php:47
-msgid "Slovakia Garant"
-msgstr ""
-
-#: header.php:59
-msgid "Viber"
-msgstr ""
-
-#: header.php:67
-msgid "WhatsApp"
-msgstr ""
-
-#: header.php:75
-msgid "Telegram"
-msgstr ""
-
-#: header.php:110
-msgid "Call back"
-msgstr ""
-
-#: header.php:154 searchform.php:2
-msgid "Search"
-msgstr ""
-
 #. Name of the template
-msgid "Page Without Title"
-msgstr ""
-
-#. Name of the template
-msgid "Sidebar Right"
-msgstr ""
-
-#: 404.php:7
-msgid "Error"
-msgstr ""
-
-#: 404.php:8
-msgid "The page you were looking for does not exist."
-msgstr ""
-
-#: 404.php:13
-msgid "Back to the homepage"
-msgstr ""
-
-#: 404.php:18
-msgid "Or use search"
+msgid "Home Page"
 msgstr ""
 
 #: footer.php:18
@@ -108,7 +51,7 @@ msgid "Developed by"
 msgstr ""
 
 #: footer.php:31
-msgid "Hot jobs in Slovakia!"
+msgid "Insurance for Europe ONLINE"
 msgstr ""
 
 #: footer.php:39
@@ -128,29 +71,83 @@ msgstr ""
 msgid "Edit Login Logo"
 msgstr ""
 
-#: loops/content-2.php:30
-msgid "Continue reading"
+#: 404.php:7
+msgid "Error"
 msgstr ""
 
-#: loops/content-blog-2.php:11 loops/content-blog-1-sbl.php:15
-#: loops/content-blog-3.php:12 loops/content-blog-1-sbr.php:12
+#: 404.php:8
+msgid "The page you were looking for does not exist."
+msgstr ""
+
+#: 404.php:13
+msgid "Back to the homepage"
+msgstr ""
+
+#: 404.php:18
+msgid "Or use search"
+msgstr ""
+
+#: archive-reviews.php:46 loops/content-blog-1-sbr.php:45
+#: loops/content-blog-1-sbl.php:45 loops/content-blog-2.php:41
+#: loops/content-2.php:45 loops/content-blog-3.php:42 loops/content.php:47
+msgid "Previous"
+msgstr ""
+
+#: archive-reviews.php:48 loops/content-blog-1-sbr.php:46
+#: loops/content-blog-1-sbl.php:46 loops/content-blog-2.php:42
+#: loops/content-2.php:46 loops/content-blog-3.php:43 loops/content.php:48
+msgid "Next"
+msgstr ""
+
+#. Name of the template
+msgid "Sitemap Page"
+msgstr ""
+
+#. Name of the template
+msgid "Page Without Breadcrumbs"
+msgstr ""
+
+#. Name of the template
+msgid "Sidebar Right"
+msgstr ""
+
+#: search.php:6
+msgid "Search Results for"
+msgstr ""
+
+#. Name of the template
+msgid "Landing"
+msgstr ""
+
+#: category.php:7 loops/content-blog-1-sbr.php:26
+#: loops/content-blog-1-sbl.php:29 loops/content-blog-2.php:25
+#: loops/content-blog-3.php:26
+msgid "Category"
+msgstr ""
+
+#. Name of the template
+msgid "Page Without Title"
+msgstr ""
+
+#: loops/content-blog-1-sbr.php:12 loops/content-blog-1-sbl.php:15
+#: loops/content-blog-2.php:11 loops/content-blog-3.php:12
 msgid "By"
 msgstr ""
 
-#: loops/content-blog-2.php:27 loops/content-blog-1-sbl.php:31
-#: loops/comments.php:20 loops/content-blog-3.php:28
-#: loops/content-blog-1-sbr.php:28
+#: loops/content-blog-1-sbr.php:28 loops/content-blog-1-sbl.php:31
+#: loops/comments.php:20 loops/content-blog-2.php:27
+#: loops/content-blog-3.php:28
 msgid "Comments"
 msgstr ""
 
-#: loops/content-blog-2.php:28 loops/content-blog-1-sbl.php:32
-#: loops/comments.php:21 loops/content-blog-3.php:29
-#: loops/content-blog-1-sbr.php:29
+#: loops/content-blog-1-sbr.php:29 loops/content-blog-1-sbl.php:32
+#: loops/comments.php:21 loops/content-blog-2.php:28
+#: loops/content-blog-3.php:29
 msgid "None"
 msgstr ""
 
-#: loops/content.php:29
-msgid " <i class=\"glyphicon glyphicon-arrow-right\"></i>"
+#: loops/content-search.php:17
+msgid "Sorry, your search yielded no results."
 msgstr ""
 
 #: loops/comments.php:9
@@ -197,8 +194,20 @@ msgstr ""
 msgid "Submit comment"
 msgstr ""
 
-#: loops/content-search.php:17
-msgid "Sorry, your search yielded no results."
+#: loops/content-2.php:30
+msgid "Continue reading"
+msgstr ""
+
+#: loops/content.php:29
+msgid " <i class=\"glyphicon glyphicon-arrow-right\"></i>"
+msgstr ""
+
+#: inc/shortcodes.php:201
+msgid "Читать полностью"
+msgstr ""
+
+#: inc/login.php:21
+msgid "<strong>ERROR:</strong> The username and password is incorrect."
 msgstr ""
 
 #: inc/customizer.php:30
@@ -229,239 +238,211 @@ msgstr ""
 msgid "Width"
 msgstr ""
 
-#: inc/customizer.php:117
+#: inc/customizer.php:118
 msgid "Height"
 msgstr ""
 
-#: inc/customizer.php:124
+#: inc/customizer.php:126
 msgid "Shape"
 msgstr ""
 
-#: inc/customizer.php:129
+#: inc/customizer.php:131
 msgid "Circle"
 msgstr ""
 
-#: inc/customizer.php:130
+#: inc/customizer.php:132
 msgid "Rounded"
 msgstr ""
 
-#: inc/customizer.php:131
+#: inc/customizer.php:133
 msgid "Square"
 msgstr ""
 
-#: inc/customizer.php:136 inc/post_type/reviews-metabox.php:29
+#: inc/customizer.php:138 inc/post_type/reviews-metabox.php:29
 msgid "Position"
 msgstr ""
 
-#: inc/customizer.php:141
+#: inc/customizer.php:143
 msgid "Right"
 msgstr ""
 
-#: inc/customizer.php:142
+#: inc/customizer.php:144
 msgid "Left"
 msgstr ""
 
-#: inc/customizer.php:147
+#: inc/customizer.php:149
 msgid "Offset Left/Right"
 msgstr ""
 
-#: inc/customizer.php:154
+#: inc/customizer.php:157
 msgid "Offset bottom"
 msgstr ""
 
-#: inc/customizer.php:161
+#: inc/customizer.php:165
 msgid "Border width"
 msgstr ""
 
-#: inc/customizer.php:168
+#: inc/customizer.php:173
 msgid "Border color"
 msgstr ""
 
-#: inc/customizer.php:175
+#: inc/customizer.php:180
 msgid "Background color"
 msgstr ""
 
-#: inc/customizer.php:182
+#: inc/customizer.php:187
 msgid "Background color hover"
 msgstr ""
 
-#: inc/customizer.php:189
+#: inc/customizer.php:194
 msgid "Arrow color"
 msgstr ""
 
-#: inc/customizer.php:197
+#: inc/customizer.php:202
 msgid "Analytics"
 msgstr ""
 
-#: inc/customizer.php:198
+#: inc/customizer.php:203
 msgid "Analytics Tracking Code"
 msgstr ""
 
-#: inc/customizer.php:233
+#: inc/customizer.php:238
 msgid "Google Analytics"
-msgstr ""
-
-#: inc/customizer.php:234 inc/customizer.php:256 inc/customizer.php:278
-#: inc/customizer.php:300 inc/customizer.php:322
-msgid "Placed (head/body)"
 msgstr ""
 
 #: inc/customizer.php:239 inc/customizer.php:261 inc/customizer.php:283
 #: inc/customizer.php:305 inc/customizer.php:327
+msgid "Placed (head/body)"
+msgstr ""
+
+#: inc/customizer.php:244 inc/customizer.php:266 inc/customizer.php:288
+#: inc/customizer.php:310 inc/customizer.php:332
 msgid "Head"
 msgstr ""
 
-#: inc/customizer.php:240 inc/customizer.php:262 inc/customizer.php:284
-#: inc/customizer.php:306 inc/customizer.php:328
+#: inc/customizer.php:245 inc/customizer.php:267 inc/customizer.php:289
+#: inc/customizer.php:311 inc/customizer.php:333
 msgid "Body"
 msgstr ""
 
-#: inc/customizer.php:245 inc/customizer.php:267 inc/customizer.php:333
+#: inc/customizer.php:250 inc/customizer.php:272 inc/customizer.php:338
 msgid "Paste tracking code here &dArr;"
 msgstr ""
 
-#: inc/customizer.php:250 inc/customizer.php:272 inc/customizer.php:338
+#: inc/customizer.php:255 inc/customizer.php:277 inc/customizer.php:343
 msgid "<!-- paste tracking code here -->"
 msgstr ""
 
-#: inc/customizer.php:255
+#: inc/customizer.php:260
 msgid "Yandex Metrika"
 msgstr ""
 
-#: inc/customizer.php:277
+#: inc/customizer.php:282
 msgid "Chat code"
 msgstr ""
 
-#: inc/customizer.php:289
+#: inc/customizer.php:294
 msgid "Paste chat code here &dArr;"
 msgstr ""
 
-#: inc/customizer.php:294
+#: inc/customizer.php:299
 msgid "<!-- paste chat code here -->"
 msgstr ""
 
-#: inc/customizer.php:299
+#: inc/customizer.php:304
 msgid "Remarketing code"
 msgstr ""
 
-#: inc/customizer.php:311
+#: inc/customizer.php:316
 msgid "Paste remarketing code here &dArr;"
 msgstr ""
 
-#: inc/customizer.php:316
+#: inc/customizer.php:321
 msgid "<!-- paste remarketing code here -->"
 msgstr ""
 
-#: inc/customizer.php:321
+#: inc/customizer.php:326
 msgid "Custom Analytics"
 msgstr ""
 
-#: inc/customizer.php:344
+#: inc/customizer.php:349
 msgid "Login"
 msgstr ""
 
-#: inc/customizer.php:345
+#: inc/customizer.php:350
 msgid "Customizer Custom Login"
 msgstr ""
 
-#: inc/customizer.php:354
+#: inc/customizer.php:359
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer.php:355
+#: inc/customizer.php:360
 msgid "Image size 80x80 px"
 msgstr ""
 
-#: inc/customizer.php:410
+#: inc/customizer.php:415
 msgid "Social"
 msgstr ""
 
-#: inc/customizer.php:411
+#: inc/customizer.php:416
 msgid "Customizer Custom Social links"
 msgstr ""
 
-#: inc/customizer.php:425
+#: inc/customizer.php:430
 msgid "Vk"
 msgstr ""
 
-#: inc/customizer.php:432
+#: inc/customizer.php:437
 msgid "Twitter"
 msgstr ""
 
-#: inc/customizer.php:439
+#: inc/customizer.php:444
 msgid "Facebook"
 msgstr ""
 
-#: inc/customizer.php:446
+#: inc/customizer.php:451
 msgid "Linkedin"
 msgstr ""
 
-#: inc/customizer.php:453
+#: inc/customizer.php:458
 msgid "Instagram"
 msgstr ""
 
-#: inc/customizer.php:460
+#: inc/customizer.php:465
 msgid "Google Plus"
 msgstr ""
 
-#: inc/customizer.php:467
+#: inc/customizer.php:472
 msgid "YouTube"
 msgstr ""
 
-#: inc/customizer.php:474
+#: inc/customizer.php:479
 msgid "Odnoklassniki"
 msgstr ""
 
-#: inc/customizer.php:482
+#: inc/customizer.php:487
 msgid "Phones"
 msgstr ""
 
-#: inc/customizer.php:483
+#: inc/customizer.php:488
 msgid "Customizer Custom Phone numbers"
 msgstr ""
 
-#: inc/customizer.php:507
+#: inc/customizer.php:512
 msgid "Phone №1"
 msgstr ""
 
-#: inc/customizer.php:524
+#: inc/customizer.php:529
 msgid "Phone №2"
 msgstr ""
 
-#: inc/customizer.php:541
+#: inc/customizer.php:546
 msgid "Phone №3"
 msgstr ""
 
-#: inc/customizer.php:558
+#: inc/customizer.php:563
 msgid "Phone №4"
-msgstr ""
-
-#: inc/index-pagination.php:20
-msgid "<i class=\"fa fa-angle-left\"></i> Newer"
-msgstr ""
-
-#: inc/index-pagination.php:21
-msgid "Older <i class=\"fa fa-angle-right\"></i>"
-msgstr ""
-
-#: inc/widgets.php:10
-msgid "Sidebar"
-msgstr ""
-
-#: inc/widgets.php:12 inc/widgets.php:25
-msgid "The sidebar widget area"
-msgstr ""
-
-#: inc/widgets.php:23
-msgid "Sidebar 2"
-msgstr ""
-
-#: inc/widgets.php:36
-msgid "Footer"
-msgstr ""
-
-#: inc/widgets.php:38
-msgid "The footer widget area"
 msgstr ""
 
 #: inc/admin.php:10
@@ -554,16 +535,32 @@ msgstr ""
 msgid "%1$s from \"%2$s\" by tag: <b>%3$s</b>"
 msgstr ""
 
-#: inc/shortcodes.php:201
-msgid "Читать полностью"
+#: inc/index-pagination.php:20
+msgid "<i class=\"fa fa-angle-left\"></i> Newer"
 msgstr ""
 
-#: inc/navbar.php:4
-msgid "Main Navigation"
+#: inc/index-pagination.php:21
+msgid "Older <i class=\"fa fa-angle-right\"></i>"
 msgstr ""
 
-#: inc/navbar.php:5
-msgid "Second Menu"
+#: inc/widgets.php:10
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widgets.php:12 inc/widgets.php:25
+msgid "The sidebar widget area"
+msgstr ""
+
+#: inc/widgets.php:23
+msgid "Sidebar 2"
+msgstr ""
+
+#: inc/widgets.php:36
+msgid "Footer"
+msgstr ""
+
+#: inc/widgets.php:38
+msgid "The footer widget area"
 msgstr ""
 
 #: inc/feedback.php:30
@@ -578,17 +575,29 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: inc/login.php:21
-msgid "<strong>ERROR:</strong> The username and password is incorrect."
+#: inc/navbar.php:4
+msgid "Main Navigation"
 msgstr ""
 
-#: template-parts/sections/block-advantages.php:70
-#: template-parts/sections/block-services.php:55
-msgid "Order service"
+#: inc/navbar.php:5
+msgid "Second Menu"
+msgstr ""
+
+#: template-parts/sections/block-reviews.php:84
+msgid "See all reviews"
+msgstr ""
+
+#: template-parts/sections/block-hero.php:26
+msgid "Free consultation"
 msgstr ""
 
 #: template-parts/sections/block-services.php:46
 msgid "Service Hexagon"
+msgstr ""
+
+#: template-parts/sections/block-services.php:55
+#: template-parts/sections/block-advantages.php:70
+msgid "Order service"
 msgstr ""
 
 #: template-parts/sections/block-blog.php:56
@@ -599,12 +608,28 @@ msgstr ""
 msgid "View all articles"
 msgstr ""
 
-#: template-parts/sections/block-hero.php:26
-msgid "Free consultation"
+#: template-parts/sections/block-prices.php:60
+msgid "See all services"
 msgstr ""
 
-#: template-parts/sections/block-reviews.php:84
-msgid "See all reviews"
+#: inc/post_type/reviews-metabox.php:9 inc/post_type/post-metabox.php:9
+msgid "Addition"
+msgstr ""
+
+#: inc/post_type/reviews-metabox.php:17
+msgid "Show On Front"
+msgstr ""
+
+#: inc/post_type/reviews-metabox.php:19 inc/post_type/post-metabox.php:19
+msgid "Enable/Disable"
+msgstr ""
+
+#: inc/post_type/reviews-metabox.php:24
+msgid "Name Surname"
+msgstr ""
+
+#: inc/post_type/post-metabox.php:17
+msgid "Show Post On Front"
 msgstr ""
 
 #: inc/post_type/reviews.php:10 inc/post_type/reviews.php:15
@@ -615,28 +640,16 @@ msgstr ""
 msgid "Review"
 msgstr ""
 
-#: inc/post_type/post-metabox.php:9 inc/post_type/reviews-metabox.php:9
-msgid "Addition"
+#: inc/post_type/service-prices.php:10 inc/post_type/service-prices.php:15
+msgid "Service Prices"
 msgstr ""
 
-#: inc/post_type/post-metabox.php:17
-msgid "Show Post On Front"
+#: inc/post_type/service-prices.php:11
+msgid "Service Price"
 msgstr ""
 
-#: inc/post_type/post-metabox.php:19 inc/post_type/reviews-metabox.php:19
-msgid "Enable/Disable"
-msgstr ""
-
-#: inc/post_type/reviews-metabox.php:17
-msgid "Show On Front"
-msgstr ""
-
-#: inc/post_type/reviews-metabox.php:24
-msgid "Name Surname"
-msgstr ""
-
-#: woocommerce/single-product/add-to-cart/simple.php:59
 #: woocommerce/single-product/add-to-cart/variation-add-to-cart-button.php:35
+#: woocommerce/single-product/add-to-cart/simple.php:59
 msgid "Buy in one click"
 msgstr ""
 
@@ -646,8 +659,4 @@ msgstr ""
 
 #. Author of the theme
 msgid "Brain Works"
-msgstr ""
-
-#. Author URI of the theme
-msgid "http://brainworks.com.ua"
 msgstr ""
